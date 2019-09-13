@@ -1,7 +1,3 @@
-.root {
-    background-color: #B0BFD1;
-}
-
 .ft_title {
     font-weight: bold;
     color: white;
@@ -35,8 +31,15 @@ header
 
 .ft_header_title > h1 {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 5rem;
+    font-style: italic;
     color: white;
+}
+
+.ft_header_title > h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #A5A9AC;
 }
 /*
 *
@@ -54,6 +57,10 @@ header
 
     .ft_header_title > h1 {
         font-size: 3.5rem;
+    }
+
+    .ft_header_title > h3 {
+        font-size: 1rem;
     }
 
     
