@@ -12,6 +12,10 @@
 
     <!-- base.css 링크 -->
     <link rel="stylesheet" type="text/css" href="{% static 'festival/base.css' %}">
+
+    <!-- title(임시) -->
+    <title>2019 GNU FESTIVAL</title>
+    
     {% block head %}   
     {% endblock %}
 </head>
@@ -19,7 +23,7 @@
 
 
 <body>
-    <div class="container">
+    <div class="root">
         {% block content %}   
         {% endblock %}
     </div>
