@@ -1,12 +1,13 @@
 .root {
-    background-color: #393C60
+    background-color: #B0BFD1;
 }
 
 .ft_title {
-    text-align: center;
     font-weight: bold;
-    color: #DADAE9;
-    font-size: 3rem;
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /*
@@ -17,11 +18,11 @@ header
 .ft_header {
     flex-basis: 100%;
     height: 100vh;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     background: url(/static/ft_img.jpg);
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.8;
     display: flex;
     align-items: center;
 }
@@ -50,4 +51,14 @@ header
     .ft_header {
         height: 40vh;
     }
+
+    .ft_header_title > h1 {
+        font-size: 3.5rem;
+    }
+
+    
+    .ft_title {
+        font-size: 2.0rem;
+    }
+
 }
