@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head %}
+<!-- foodtruck.css링크-->
+<link rel="stylesheet" type="text/css" href="{% static 'festival/foodtruck.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="ft_header">
+    <img src="{% static 'ft_img.png' %}" alt="">
+</div>
+{% endblock %}
