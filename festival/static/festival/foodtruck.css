@@ -42,15 +42,15 @@ header
 *
 */
 
-
-
-
 .foodtruck {
     flex-basis: 100%;
-    height: 2000px;
     background-color: dimgrey;
 }
 
+.truck {
+    width: 95%;
+    margin: auto;
+}
 .truck_title {
     text-align: center;
     padding-top: 1em;
@@ -61,7 +61,8 @@ header
 
 .truck_subtitle {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ECECF1;
 }
 .truck_total {
 }
@@ -70,6 +71,8 @@ header
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
+    border-radius: 0.5em;
+    background-color: #838383;
 }
 
 .truck_top_left {
@@ -92,6 +95,9 @@ header
 
 .truck_bottom {
     padding: 2em;
+    border-radius: 0.5em;
+    background-color: #838383;
+    
 }
 
 .truck_bottom_contents {
@@ -109,12 +115,34 @@ header
 .truck_bottom_img > p {
     font-weight: bold;
     font-size: 1rem;
+    color: #ECECF1;
 }
 /*
 *
 미디어 쿼리
 *
 */
+@media screen and (min-width: 901px) {
+    .truck_top {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .truck_top_left {
+        flex-basis: 100%;
+    }
+    
+    .truck_top_right {
+        flex-basis: 100%;
+    }
+
+    .truck_top {
+        margin-bottom: 1em;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
     /* header */
     .ft_header {
@@ -134,15 +162,7 @@ header
     }
 
     .truck_subtitle {
-        font-size: 1.5rem;
-    }
-
-    .truck_top_left {
-        flex-basis: 100%;
-    }
-    
-    .truck_top_right {
-        flex-basis: 100%;
+        font-size: 2rem;
     }
     
 }
@@ -150,6 +170,6 @@ header
 
 @media screen and (max-width: 470px) {
     .truck_bottom_img > img {
-        width: 8rem;
-}
+        width: 7rem;
+    }
 }
