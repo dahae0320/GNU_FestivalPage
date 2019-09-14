@@ -45,6 +45,7 @@ header
 .foodtruck {
     flex-basis: 100%;
     background-color: dimgrey;
+    padding-bottom: 2em;
 }
 
 .truck {
@@ -53,7 +54,7 @@ header
 }
 .truck_title {
     text-align: center;
-    padding-top: 3em;
+    padding-top: 2em;
     font-size: 3rem;
     font-weight: bold;
     color: #ECECF1;
@@ -139,6 +140,10 @@ header
 
     .truck_top {
         margin-bottom: 1em;
+    }
+
+    .truck_top_image > img {
+        width: 100%;
     }
 
 }
