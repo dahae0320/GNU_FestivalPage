@@ -53,7 +53,7 @@ header
 
 .truck_title {
     text-align: center;
-    margin-top: 1em;
+    padding-top: 1em;
     font-size: 3rem;
     font-weight: bold;
     color: #ECECF1;
@@ -64,31 +64,26 @@ header
     font-size: 2rem;
 }
 .truck_total {
-    background-color: yellow;
 }
 
 .truck_top {
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
     padding: 1em;
 }
 
 .truck_top_left {
     flex-basis: 50%;
-    background-color: antiquewhite;
     padding: 1em;
 }
 
 .truck_top_right {
     flex-basis: 50%;
-    background-color: aqua;
     padding: 1em;
 }
 
 .truck_top_image {
-    width: 80%;
-    background-color: black;
+    width: 100%;
 }
 
 .truck_top_image > img {
@@ -96,18 +91,15 @@ header
 }
 
 .truck_bottom {
-    background-color: blue;
     padding: 2em;
 }
 
 .truck_bottom_contents {
     display: flex;
     flex-wrap: wrap;
-    background-color: aquamarine;
 }
 
 .truck_bottom_img {
-    flex-grow: 1;
     margin-right: 1em;
 }
 
@@ -141,16 +133,23 @@ header
         font-size: 2.5rem;
     }
 
+    .truck_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .truck_top_left {
+        flex-basis: 100%;
+    }
+    
+    .truck_top_right {
+        flex-basis: 100%;
+    }
     
 }
 
 
-@media screen and (max-width: 430px) {
-    .truck_bottom_img {
-        width: 6rem;
-        max-width: 100%
-}
-.truck_bottom_img > img {
-    max-width: 6rem
+@media screen and (max-width: 470px) {
+    .truck_bottom_img > img {
+        width: 8rem;
 }
 }
