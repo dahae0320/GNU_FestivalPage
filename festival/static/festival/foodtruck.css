@@ -107,10 +107,12 @@ header
 }
 
 .truck_bottom_img {
-    margin-right: 1em;
+    flex-basis: 25%;
+    padding-right: 1.5em;
 }
 
 .truck_bottom_img > img {
+    width: 100%;
 }
 
 .truck_bottom_img > p {
@@ -145,7 +147,6 @@ header
     .truck_top_image > img {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -174,7 +175,7 @@ header
 
 
 @media screen and (max-width: 470px) {
-    .truck_bottom_img > img {
-        width: 7rem;
+    .truck_bottom_img {
+        flex-basis: 50%;
     }
 }
