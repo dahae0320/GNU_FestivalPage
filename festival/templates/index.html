@@ -6,10 +6,16 @@
 
 
 {% block content %}
-<img src="{% static 'festival/003.jpg' %}" alt="festa" style="width: 100%">
+<div class="main_image">
+    <img src="{% static 'festival/003.jpg' %}" alt="festa" style="width: 100%">
+    <!--<div class="logo">
+        <h2>경상대학교 대동제</h2>
+    </div>-->
+</div>
 <div class="backbox">
-    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
-    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
-    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
+    <!--<img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program">-->
+    <a href="#"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></a>
+    <a href="#"><img class="box_image" src="{% static 'festival/sing.jpg' %}" alt="program"></a>
+    <a href="#"><img class="box_image" src="{% static 'festival/foodtruck.jpg' %}" alt="program"></a>
 </div>
 {% endblock %}

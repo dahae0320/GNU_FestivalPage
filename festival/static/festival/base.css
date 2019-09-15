@@ -18,6 +18,7 @@
     float: left;
 }
 .footer {
-    background-color: rgb(158, 143, 143);
-    width:100%;
+    background-color: rgb(83, 113, 138);
+    padding: 2rem;
+    text-align: center;
 }

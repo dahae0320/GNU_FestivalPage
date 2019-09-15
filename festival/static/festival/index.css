@@ -1,16 +1,33 @@
 .backbox {
-    background-color: rgb(56, 66, 73);
+    background: linear-gradient(to bottom, rgb(40, 42, 44), rgb(80, 111, 128)) ;
     width: 100%;
 }
-.box {
+
+/*.box {
     background-color:white;
     height: 300px;
+    min-width: 60%;
     max-width: 60%;
     margin: auto;
+    text-align: center;
     margin-top: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 .box_image {
     max-width:100%;
+    max-height:100%;
     opacity: 0.4;
+    margin: auto;
+    object-fit: cover;
+} */
+
+.box_image {
+    width:80%;
+    display:block;
+    margin: 0px auto;
+    opacity: 0.7;
+    margin-top:100px;
+    margin-bottom: 100px;
+    border-radius: 3rem;
+    box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
