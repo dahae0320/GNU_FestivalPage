@@ -1,0 +1,16 @@
+.backbox {
+    background-color: rgb(56, 66, 73);
+    width: 100%;
+}
+.box {
+    background-color:white;
+    height: 300px;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+.box_image {
+    max-width:100%;
+    opacity: 0.4;
+}

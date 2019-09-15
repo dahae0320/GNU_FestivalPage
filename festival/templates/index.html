@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title>타이틀</title>
+{% endblock %}
+
+
+{% block content %}
+<img src="{% static 'festival/003.jpg' %}" alt="festa" style="width: 100%">
+<div class="backbox">
+    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
+    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
+    <div class="box"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></div>
+</div>
+{% endblock %}

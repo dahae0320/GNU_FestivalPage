@@ -12,6 +12,7 @@
 
     <!-- base.css 링크 -->
     <link rel="stylesheet" type="text/css" href="{% static 'festival/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'festival/index.css' %}">
     {% block head %}   
     {% endblock %}
 </head>
@@ -19,9 +20,19 @@
 
 
 <body>
-    <div class="container">
+    <div class="container1">
+        <div class="navbar">
+            <a href="#">one</a>
+            <a href="#">two</a>
+            <a href="#">three</a>
+            <a href="#">four</a>
+        </div>
         {% block content %}   
         {% endblock %}
+        <div class="footer">
+            <h5>경상대학교 대동제</h5>
+            <h6>made by 경상대 멋쟁이사자처럼</h6>
+        </div>
     </div>
 </body>
 </html>
