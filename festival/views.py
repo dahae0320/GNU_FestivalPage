@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def scprogram(request):
+    return render(request, 'sc program.html')
