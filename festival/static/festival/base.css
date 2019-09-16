@@ -1,6 +1,59 @@
 *{box-sizing: border-box;}
+@font-face { 
+    font-family: 'GyeonggiBatang'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
 
 .root {
     display: flex;
     flex-wrap: wrap;
+}
+.navbar {
+    justify-content: flex-end;
+    width: 100%;
+    background-color: rgb(48, 41, 41);
+    opacity: 1;
+    position: fixed;
+    overflow: hidden;
+    padding:10px 30px 10px 30px;
+    z-index:5;
+}
+/*nav에서 오른쪽 정렬할수 있도록.. ㅠㅠ*/
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    float:left;
+    margin:0 3px 0 3px;
+    padding:0 10px 0 10px;
+    font-family: 'GyeonggiBatang';
+}
+.navbar a:hover:not(.main_logo) {
+    background-color:rgb(255, 255, 255);
+    color:rgb(0,0,0);
+    border-radius:2px;
+}
+.navbar .main_logo {
+    font-size:23px;
+}
+.footer {
+    background-color: rgb(116, 112, 80);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/*모바일 웹*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        opacity: 1;
+        padding:10px;
+    }
+    .navbar a:active:not(.main_logo) {
+        background-color:rgb(255, 255, 255);
+        color:rgb(0,0,0);
+        border-radius:2px;
+    }
 }

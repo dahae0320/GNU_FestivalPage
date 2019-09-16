@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'festival/index.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="main_image">
+    <img src="{% static 'festival/main.png' %}" alt="festa" style="width: 100%">
+    <!--<div class="logo">
+        <h2>경상대학교 대동제</h2>
+    </div>-->
+</div>
+<div class="backbox">
+    <!--<img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program">-->
+    <a href="#"><img class="box_image" src="{% static 'festival/004.jpg' %}" alt="program"></a>
+    <a href="#"><img class="box_image" src="{% static 'festival/sing.jpg' %}" alt="program"></a>
+    <a href="#"><img class="box_image" src="{% static 'festival/foodtruck.jpg' %}" alt="program"></a>
+</div>
+{% endblock %}
