@@ -72,6 +72,7 @@ header
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
+    margin-bottom: 1em;
     border-radius: 0.5em;
     background-color: #838383;
 }
@@ -125,12 +126,6 @@ header
 미디어 쿼리
 *
 */
-@media screen and (min-width: 901px) {
-    .truck_top {
-        margin-bottom: 1em;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .truck_top_left {
         flex-basis: 100%;
@@ -139,11 +134,7 @@ header
     .truck_top_right {
         flex-basis: 100%;
     }
-
-    .truck_top {
-        margin-bottom: 1em;
-    }
-
+    
     .truck_top_image > img {
         width: 100%;
     }
