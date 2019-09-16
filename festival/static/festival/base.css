@@ -11,6 +11,7 @@
     flex-wrap: wrap;
 }
 .navbar {
+    justify-content: flex-end;
     width: 100%;
     background-color: rgb(48, 41, 41);
     opacity: 1;
@@ -24,16 +25,18 @@
     text-decoration: none;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    float: left;
+    float:left;
+    margin:0 3px 0 3px;
+    padding:0 10px 0 10px;
     font-family: 'GyeonggiBatang';
 }
-.navbar .lion {
-    font-size:18px;
-}
-.navbar a:hover {
+.navbar a:hover:not(.main_logo) {
     background-color:rgb(255, 255, 255);
     color:rgb(0,0,0);
     border-radius:2px;
+}
+.navbar .main_logo {
+    font-size:23px;
 }
 .footer {
     background-color: rgb(116, 112, 80);
@@ -48,7 +51,7 @@
         opacity: 1;
         padding:10px;
     }
-    .navbar a:active {
+    .navbar a:active:not(.main_logo) {
         background-color:rgb(255, 255, 255);
         color:rgb(0,0,0);
         border-radius:2px;
