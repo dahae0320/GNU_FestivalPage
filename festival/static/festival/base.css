@@ -39,6 +39,7 @@
     font-size:23px;
 }
 .footer {
+    flex-basis: 100%;
     background-color: rgb(116, 112, 80);
     padding: 2rem;
     text-align: center;
