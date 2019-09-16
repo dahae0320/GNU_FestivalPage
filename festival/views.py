@@ -7,3 +7,6 @@ def foodtruck(request):
     
 def index(request):
     return render(request, 'index.html')
+
+def scprogram(request):
+    return render(request, 'scprogram.html')
