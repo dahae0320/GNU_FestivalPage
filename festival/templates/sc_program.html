@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'sc style.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Courgette|Fredoka+One|Indie+Flower|Jua|Nanum+Brush+Script|Orbitron|Patrick+Hand|Permanent+Marker|Satisfy|Sunflower:300" rel="stylesheet">
+    <title>학생회 프로그램</title>
+</head>
+
+<body>
+    <img id="upperimg" src="{% static 'computer-1149148_1920.jpg' %}">
+    <br>
+    <div class="menu_flex_container">
+        <!--버튼으로 교체?? 누르면 스크롤 js로 하는 건가?? // 일단 위치 설정만 해놓고 안에 글자 가운데 정렬 등 수정하자!-->
+        <div class="menu_flex_item"><a href="#target1" class="scroll">10월 13일</a></div>
+        <div class="menu_flex_item"><a href="#target2" class="scroll">10월 14일</a></div>
+        <div class="menu_flex_item"><a href="#target3" class="scroll">10월 15일</a></div>
+        <div class="menu_flex_item"><a href="#target4" class="scroll">10월 16일</a></div>
+
+    </div>
+    <br><br><br>
+    <div id="target1"></div>
+    <div class="flex_container">
+        <!--<div class="flex_item_time">시간</div>
+        <div class="flex_item_contents">일정</div>-->
+        <table>
+            <caption class="table_title">10월 13일</caption>
+            <thead>
+                <tr>
+                    <th class="time">시각</th>
+                    <th>행사</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1 내용</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2 내용</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div id="target2"></div>
+    <div class="flex_container">
+            <!--<div class="flex_item_time">시간</div>
+            <div class="flex_item_contents">일정</div>-->
+            <table>
+                <caption class="table_title">10월 14일</caption>
+                <thead>
+                    <tr>
+                        <th class="time">시각</th>
+                        <th>행사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1 내용</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2 내용</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <br><br>
+
+    <div id="target3"></div>
+    <div class="flex_container">
+            <!--<div class="flex_item_time">시간</div>
+            <div class="flex_item_contents">일정</div>-->
+            <table>
+                <caption class="table_title">10월 15일</caption>
+                <thead>
+                    <tr>
+                        <th class="time">시각</th>
+                        <th>행사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1 내용</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2 내용</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <br><br>
+
+    <div id="target4"></div>
+    <div class="flex_container">
+            <!--<div class="flex_item_time">시간</div>
+            <div class="flex_item_contents">일정</div>-->
+            <table>
+                <caption class="table_title">10월 16일</caption>
+                <thead>
+                    <tr>
+                        <th class="time">시각</th>
+                        <th>행사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1 내용</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2 내용</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){            
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+        })
+    </script>
+</body>
+
+</html>
