@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block head %}
+
 <!-- 이곳에 head태그 관련 내용 추가-->
-<link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet"> 
     <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     
@@ -29,7 +30,8 @@
 
 
         html{
-            background-color:rgb(244, 235, 231)
+            /* background-color:rgb(244, 235, 231) */
+            background-color: black;
         }
 
 
@@ -43,13 +45,14 @@
             align-items: center;
             height:2000px;
             width:100%;
-            background-color:rgb(244, 235, 231);
+            /* background-color:rgb(244, 235, 231); */
+            background-color: black;
             /*background-color: rgba(0,0,0.4);*/
         }
 
         /* 메인 사진 */
         .flex-container>.flex-item-main1{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static 10_16_main.jpg %}");
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_16_main.jpg' %}");
             background-position: center;
             background-size: cover;
             background-color:rgb(34, 0, 88);
@@ -67,7 +70,7 @@
         }
 
         .flex-container>.flex-item-main2{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(example4.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_17_main.jpg' %}");
             background-position: center;
             background-size: cover;
             background-color:rgb(34, 0, 88);
@@ -85,7 +88,7 @@
         }
 
         .flex-container>.flex-item-main3{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(example6.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_18_main.png' %}");
             background-position: center;
             background-size: cover;
             background-color:rgb(34, 0, 88);
@@ -144,6 +147,7 @@
             max-width:600px;
             overflow: hidden;
             font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
+            color: white;
             font-size:1.3rem;
             display: flex;
             align-items: center;
@@ -173,11 +177,11 @@
         <div class="small-item">
             <div class="small-item-about">
                 EXO<br><br>
-                SM
-                Entertainment
+                SM Entertainment<br><br>
+                Tempo
             </div>
         </div>
-        <div class="small-item" style="width:50%;"><img src="{% static 10_16_profile.jpg %}"  style="height:100%;"></div>
+        <div class="small-item" style="width:50%;"><img src="{% static '10_16_profile.jpg' %}"  style="height:100%;"></div>
         <div class="small-item">
             <div class="small-item-about">
                 10/16 WED<br>
@@ -196,10 +200,11 @@
         <div class="small-item">
             <div class="small-item-about">
                 아이유<br><br>
-                카카오M<br>
+                카카오M<br><br>
+                삐삐
             </div>
         </div>
-        <div class="small-item" style="width:50%;"><img src="example4_1.jpg" style="height:100%; "></div>
+        <div class="small-item" style="width:50%;"><img src="{% static '10_17_profile.jpg' %}" style="height:100%; "></div>
         <div class="small-item">
             <div class="small-item-about">
                 10/17 THU<br>
@@ -218,11 +223,11 @@
         <div class="small-item">
             <div class="small-item-about">
                 Red Velvet<br><br>
-                SM
-                Entertainment
+                SM Entertainment<br><br>
+                짐살라빔
             </div>
         </div>
-        <div class="small-item" style="width:50%;"><img src="example6.jpg" style="height:100%;"></div>
+        <div class="small-item" style="width:50%;"><img src="{% static '10_18_profile.jpg' %}" style="height:100%;"></div>
         <div class="small-item">
             <div class="small-item-about">
                 10/18 FRI<br>
@@ -231,8 +236,4 @@
         </div>
     </div>
 </div>
-
-
-
-
 {% endblock %}
