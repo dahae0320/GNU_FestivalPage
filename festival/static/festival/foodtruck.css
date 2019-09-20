@@ -142,10 +142,6 @@ header
 
 @media screen and (max-width: 700px) {
     /* header */
-    .ft_header {
-        height: 40vh;
-    }
-
     .ft_header_title > h1 {
         font-size: 3.5rem;
     }
