@@ -10,3 +10,5 @@ def index(request):
 
 def scprogram(request):
     return render(request, 'scprogram.html')
+def singer(request):
+    return render(request, 'singer.html')

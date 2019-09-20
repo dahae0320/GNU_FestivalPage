@@ -1,0 +1,121 @@
+/* font-family */
+@font-face { 
+    font-family: 'Chosunilbo_myungjo'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face { 
+    font-family: 'NotoSerifKR'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+html{
+    background-color:rgb(244, 235, 231)
+}
+
+.flex-container { 
+    display: flex; 
+    /* flex-direction: row | row-reverse | column | column-reverse */ 
+    flex-direction: column; 
+    /* justify-content: flex-start | center | flex-end | space-between | space-around | space-evenly */ 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+
+    height:2000px;
+    width:100%;
+    background-color: rgb(244, 235, 231);
+}
+
+/* 
+    가수 메인사진 영역 
+*/
+/* 10월 16일 */
+.flex-container>.main-1016{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+
+    height:16.6%;
+    width:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 10월 17일 */
+.flex-container>.main-1017{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_17_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+
+    height:16.6%;
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 10월 18일 */
+.flex-container>.main-1018{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_18_main.png);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+    
+    height:16.6%;
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 가수 이름 */
+.main-title{
+    font-family: times, impact;
+    color: white;
+    font-size: 2em;   
+}
+
+/* 
+    가수 프로필 영역
+*/
+.flex-container>.profile{
+    height:16.6%;
+    width:100%;
+    text-align: center;  
+    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* 프로필 영역 3등분하는 박스  */
+.profile>.profile-box{
+    height:90%;
+    width:33.3%;
+    max-width:600px;
+    overflow: hidden;
+
+    font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
+    font-size:1.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 프로필 사진 */
+.profile-box>img{
+    height:100%;
+}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head %}
+<!-- 이곳에 head태그 관련 내용 추가-->
+<!-- css file -->
+<link rel="stylesheet" type="text/css" href="{% static 'festival/singer.css' %}">
+
+<!-- font-family: 'hanna', 'nanum Pen Script', 'hanna'; -->
+<link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet"> 
+<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="flex-container"> 
+    <!-- 메인 사진 10월 16일 -->
+    <div class="main-1016">
+        <div class="main-title">EXO</div>
+    </div>
+
+    <!-- 프로필 -->
+    <div class="profile"> 
+        <div class="profile-box">
+            EXO<br><br>
+            SM Entertainment<br><br>
+            Tempo
+        </div>
+        <div class="profile-box"><img src="{% static '10_16_profile.jpg' %}"></div>
+        <div class="profile-box">
+            10/16 WED<br>
+            8 p.m.<br><br>
+        </div>
+    </div> 
+
+    <!-- 메인 사진 10월 17일 -->
+    <div class="main-1017">
+        <div class="main-title">IU</div>
+    </div> 
+
+    <!-- 프로필 -->
+    <div class="profile">
+        <div class="profile-box">
+            아이유<br><br>
+            카카오M<br><br>
+            삐삐
+        </div>
+        <div class="profile-box"><img src="{% static '10_17_profile.jpg' %}"></div>
+        <div class="profile-box">
+            10/17 THU<br>
+            8 p.m.<br><br>
+        </div>
+    </div>
+
+    <!-- 메인 사진 10월 18일 -->
+    <div class="main-1018">
+        <div class="main-title">Red Velvet</div>
+    </div> 
+
+    <!-- 프로필 -->
+    <div class="profile">
+        <div class="profile-box">
+            Red Velvet<br><br>
+            SM Entertainment<br><br>
+            짐살라빔
+        </div>
+        <div class="profile-box"><img src="{% static '10_18_profile.jpg' %}"></div>
+        <div class="profile-box">
+            10/18 FRI<br>
+            8 p.m.<br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}
