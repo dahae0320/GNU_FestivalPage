@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block head %}
 <!-- 이곳에 head태그 관련 내용 추가-->
 <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
@@ -48,7 +49,7 @@
 
         /* 메인 사진 */
         .flex-container>.flex-item-main1{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(example1.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static 10_16_main.jpg %}");
             background-position: center;
             background-size: cover;
             background-color:rgb(34, 0, 88);
@@ -176,7 +177,7 @@
                 Entertainment
             </div>
         </div>
-        <div class="small-item" style="width:50%;"><img src="example1_1.jpg"  style="height:100%;"></div>
+        <div class="small-item" style="width:50%;"><img src="{% static 10_16_profile.jpg %}"  style="height:100%;"></div>
         <div class="small-item">
             <div class="small-item-about">
                 10/16 WED<br>
