@@ -1,7 +1,11 @@
-{% extends 'base.html' %}
-{% block head %}
-<!-- 이곳에 head태그 관련 내용 추가-->
-<link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet"> 
     <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     
@@ -156,82 +160,79 @@
         }
 
     </style>
-{% endblock %}
+</head>
+<body>
+    <div class="flex-container"> 
+        <!-- 메인 사진 -->
+        <div class="flex-item-main1">
+            <div class="small-item-name">EXO</div>
+        </div>
 
+        <!-- 가수 시간 -->
+        <div class="flex-item-time"> 
+            <div class="small-item">
+                <div class="small-item-about">
+                    EXO<br><br>
+                    SM
+                    Entertainment
+                </div>
+            </div>
+            <div class="small-item" style="width:50%;"><img src="example1_1.jpg"  style="height:100%;"></div>
+            <div class="small-item">
+                <div class="small-item-about">
+                    10/16 WED<br>
+                    8 p.m.<br><br>
+                </div>
+            </div>
+        </div> 
 
+        <!-- 메인 사진 -->
+        <div class="flex-item-main2">
+            <div class="small-item-name">IU</div>
+        </div> 
 
-{% block content %}
-<div class="flex-container"> 
-    <!-- 메인 사진 -->
-    <div class="flex-item-main1">
-        <div class="small-item-name">EXO</div>
+        <!-- 가수 시간 -->
+        <div class="flex-item-time">
+            <div class="small-item">
+                <div class="small-item-about">
+                    아이유<br><br>
+                    카카오M<br>
+                </div>
+            </div>
+            <div class="small-item" style="width:50%;"><img src="example4_1.jpg" style="height:100%; "></div>
+            <div class="small-item">
+                <div class="small-item-about">
+                    10/17 THU<br>
+                    8 p.m.<br><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 사진 -->
+        <div class="flex-item-main3">
+            <div class="small-item-name">Red Velvet</div>
+        </div> 
+
+        <!-- 가수 시간 -->
+        <div class="flex-item-time">
+            <div class="small-item">
+                <div class="small-item-about">
+                    Red Velvet<br><br>
+                    SM
+                    Entertainment
+                </div>
+            </div>
+            <div class="small-item" style="width:50%;"><img src="example6.jpg" style="height:100%;"></div>
+            <div class="small-item">
+                <div class="small-item-about">
+                    10/18 FRI<br>
+                    8 p.m.<br><br>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- 가수 시간 -->
-    <div class="flex-item-time"> 
-        <div class="small-item">
-            <div class="small-item-about">
-                EXO<br><br>
-                SM
-                Entertainment
-            </div>
-        </div>
-        <div class="small-item" style="width:50%;"><img src="example1_1.jpg"  style="height:100%;"></div>
-        <div class="small-item">
-            <div class="small-item-about">
-                10/16 WED<br>
-                8 p.m.<br><br>
-            </div>
-        </div>
-    </div> 
+    
 
-    <!-- 메인 사진 -->
-    <div class="flex-item-main2">
-        <div class="small-item-name">IU</div>
-    </div> 
-
-    <!-- 가수 시간 -->
-    <div class="flex-item-time">
-        <div class="small-item">
-            <div class="small-item-about">
-                아이유<br><br>
-                카카오M<br>
-            </div>
-        </div>
-        <div class="small-item" style="width:50%;"><img src="example4_1.jpg" style="height:100%; "></div>
-        <div class="small-item">
-            <div class="small-item-about">
-                10/17 THU<br>
-                8 p.m.<br><br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 메인 사진 -->
-    <div class="flex-item-main3">
-        <div class="small-item-name">Red Velvet</div>
-    </div> 
-
-    <!-- 가수 시간 -->
-    <div class="flex-item-time">
-        <div class="small-item">
-            <div class="small-item-about">
-                Red Velvet<br><br>
-                SM
-                Entertainment
-            </div>
-        </div>
-        <div class="small-item" style="width:50%;"><img src="example6.jpg" style="height:100%;"></div>
-        <div class="small-item">
-            <div class="small-item-about">
-                10/18 FRI<br>
-                8 p.m.<br><br>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-{% endblock %}
+</body>
+</html>
