@@ -98,7 +98,6 @@ header
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
-    margin-bottom: 1em;
     border-radius: 0.5em;
     background-color: #838383;
 }
@@ -106,11 +105,13 @@ header
 .truck_top_left {
     flex-basis: 50%;
     padding: 1em;
+    padding-top: 0;
 }
 
 .truck_top_right {
     flex-basis: 50%;
     padding: 1em;
+    padding-top: 0;
 }
 
 .truck_top_image {
@@ -130,6 +131,7 @@ header
     padding: 2em;
     border-radius: 0.5em;
     background-color: #838383;
+    display: none;
     
 }
 
@@ -164,24 +166,111 @@ header
     font-size: 1rem;
     color: #ECECF1;
 }
+
+
+/*
+*
+슬라이드 기능
+*
+*/
+.foodtruck {
+    position: relative;
+    padding-bottom: 100vh;
+}
+
+.truck {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bigprenxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+
+.pre, .nxt {
+    background: rgba(88,88,88,.4);
+    cursor: pointer;
+    height: 75px;
+}
+
+.bigpre {
+    left:0;
+}
+.bignxt {
+    right: 0;
+}
+
+.pre {
+    background: url(/static/left_icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nxt {
+    background: url(/static/right_icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bignav {
+    position: absolute;
+    width: 100%;
+    height: 11px;
+    bottom: 3%;
+    z-index: 99;
+    display:flex;
+    justify-content: space-around;
+}
+.nav {
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+
+.truck {
+    z-index: -1;
+}
+
+#i1:checked ~ #truck_1,
+#i2:checked ~ #truck_2,
+#i3:checked ~ #truck_3{
+    z-index: 9; 
+}
+
+#i1:checked ~ div #dot1,
+#i2:checked ~ div #dot2,
+#i3:checked ~ div #dot3{
+    background: #fff;
+}
+
 /*
 *
 미디어 쿼리
 *
 */
-@media screen and (max-width: 900px) {
-    .truck_top_left {
-        flex-basis: 100%;
-    }
-    
-    .truck_top_right {
-        flex-basis: 100%;
-    }
-    
-    .truck_top_image > img {
-        width: 100%;
+
+@media screen and (min-width: 701px) {
+    .bignav{
+        bottom: 6%;
     }
 }
+
 
 @media screen and (max-width: 700px) {
     /* header */
@@ -209,12 +298,14 @@ header
         flex-basis: 50%;
     }
 
-}
-
-@media screen and (min-width: 421px) {
-    .title2 {
-        display: none;
+    .truck_top_left {
+        flex-basis: 100%;
     }
+
+    .truck_top_right {
+        flex-basis: 100%;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -226,103 +317,9 @@ header
         height: 150px;
         margin-bottom: 20px;
     }
-    
-    .truck_bottom {
-        display: none;
-    }
 
     .truck_top_left, .truck_top_right {
         padding-top: 0;
     }
-
-/*
-*
-슬라이드 기능
-*
-*/
-    .foodtruck {
-        position: relative;
-        padding-bottom: 100vh;
-    }
-
-    .truck {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    .bigprenxt {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; 
-        width: 15%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 99;
-    }
-
-
-    .pre, .nxt {
-        background: rgba(88,88,88,.4);
-        cursor: pointer;
-        height: 10%;
-    }
     
-    .bigpre {
-        left:0;
-    }
-    .bignxt {
-        right: 0;
-    }
-    
-    .pre {
-        background: url(/static/left_icon.png);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .nxt {
-        background: url(/static/right_icon.png);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .bignav {
-        position: absolute;
-        width: 100%;
-        height: 11px;
-        bottom: 3%;
-        z-index: 99;
-        display:flex;
-        justify-content: space-around;
-    }
-    .nav {
-    }
-    
-    .dots{
-        top: -5px;
-        width: 18px;
-        height: 18px;
-        margin: 0 4px;
-        position: relative;
-        border-radius: 50%;
-        display: inline-block;
-        background: rgba(0,0,0,.6);
-    }
-    
-    .truck {
-        z-index: -1;
-    }
-    
-    #i1:checked ~ #truck_1,
-    #i2:checked ~ #truck_2,
-    #i3:checked ~ #truck_3{
-        z-index: 9; 
-    }
-    
-    #i1:checked ~ div #dot1,
-    #i2:checked ~ div #dot2,
-    #i3:checked ~ div #dot3{
-        background: #fff;
-    }
 }
