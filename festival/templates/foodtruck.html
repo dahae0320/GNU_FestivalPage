@@ -3,17 +3,21 @@
 {% block head %}
 <!-- foodtruck.css링크-->
 <link rel="stylesheet" type="text/css" href="{% static 'festival/foodtruck.css' %}">
+<!-- j쿼리 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 {% endblock %}
 
 
 {% block content %}
 <!-- header -->
-<div class="ft_header">
-    <div class="ft_header_title">
-        <h1>Food Truck</h1>
-        <h3>경상대 축제 푸드트럭 메뉴 & 위치</h3>
+<a href="#truck_1" class="header_a">
+    <div class="ft_header">
+        <div class="ft_header_title">
+            <h1>Food Truck</h1>
+            <h3>경상대 축제 푸드트럭 메뉴 & 위치</h3>
+        </div>
     </div>
-</div>
+</a>
 
 
 <!-- 푸드트럭 정보 -->
@@ -141,4 +145,9 @@
 
 
 </div>
+{% endblock %}
+
+
+
+{% block script %}
 {% endblock %}
