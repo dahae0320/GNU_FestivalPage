@@ -70,6 +70,10 @@ header
     display: inline-block;
     padding: 0.2em;
 }
+.title2 {
+    background-color: silver;
+    color: #706F6F;
+}
 .truck_total {
 }
 
@@ -99,10 +103,6 @@ header
     background-color: #706F6F;
     border-radius: 0 0.3em 0.3em 0.3em;
 }
-
-.ttib {
-}
-
 .truck_top_image > img {
     max-width: 100%;
     width: 100%;
@@ -194,6 +194,12 @@ header
 
 }
 
+@media screen and (min-width: 421px) {
+    .title2 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .truck_top_image {
         height: 200px;
@@ -204,5 +210,8 @@ header
         margin-bottom: 20px;
     }
     
+    .truck_bottom {
+        display: none;
+    }
 
 }
