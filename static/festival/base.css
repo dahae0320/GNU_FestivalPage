@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 
-.container {
+.root {
     display: flex;
     flex-wrap: wrap;
 }

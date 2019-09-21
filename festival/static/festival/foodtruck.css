@@ -231,6 +231,10 @@ header
         display: none;
     }
 
+    .truck_top_left, .truck_top_right {
+        padding-top: 0;
+    }
+
 /*
 *
 슬라이드 기능
