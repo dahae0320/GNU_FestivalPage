@@ -293,7 +293,7 @@ header
     cursor: pointer;
 }
 
-#title_1, #title_2 {
+.truck_top_right h1 {
     background-color: silver;
     color: #706F6F;
 }
