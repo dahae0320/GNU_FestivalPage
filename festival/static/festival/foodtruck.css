@@ -18,6 +18,8 @@ label {
 #i1, #i2, #i3 {
     display: none;
 }
+
+
 /*
 *
 header
@@ -92,6 +94,9 @@ header
     border-radius: 0.3em 0.3em 0 0;
     display: inline-block;
     padding: 0.2em;
+}
+
+.truck_top_left h1 {
     color: #ECECF1;  
     background-color: #706F6F;
 }
@@ -234,8 +239,6 @@ header
     display:flex;
     justify-content: space-around;
 }
-.nav {
-}
 
 .dots{
     top: -5px;
@@ -277,15 +280,19 @@ header
 
 .top_left {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 
-#t1_r_1, #t1_r_2 {
+#t1_r_1, #t1_r_2, #t2_r_1, #t2_r_2,#t3_r_1, #t3_r_2{
     display: none;
 }
 
 #t1_r_1:checked ~ div #t1_1,
-#t1_r_2:checked ~ div #t1_2{
+#t1_r_2:checked ~ div #t1_2,
+#t2_r_1:checked ~ div #t2_1,
+#t2_r_2:checked ~ div #t2_2,
+#t3_r_1:checked ~ div #t3_1,
+#t3_r_2:checked ~ div #t3_2{
     z-index: 9; 
 }
 
@@ -293,18 +300,35 @@ header
     cursor: pointer;
 }
 
-.truck_top_right h1 {
+.truck_top_right_loc {
+    background-color: #706F6F;
+    color: #ECECF1;  
+}
+
+.truck_top_right_menu {
     background-color: silver;
     color: #706F6F;
 }
 
 #t1_r_1:checked ~ div #title_1,
-#t1_r_2:checked ~ div #title_2{
+#t1_r_2:checked ~ div #title_2,
+#t2_r_1:checked ~ div #title_1,
+#t2_r_2:checked ~ div #title_2,
+#t3_r_1:checked ~ div #title_1,
+#t3_r_2:checked ~ div #title_2{
     color: #ECECF1;  
     background-color: #706F6F;
 }
 
-
+#t1_r_1:checked ~ div #title_2,
+#t1_r_2:checked ~ div #title_1,
+#t2_r_1:checked ~ div #title_2,
+#t2_r_2:checked ~ div #title_1,
+#t3_r_1:checked ~ div #title_2,
+#t3_r_2:checked ~ div #title_1{  
+    background-color: silver;
+    color: #706F6F;
+}
 /*
 *
 미디어 쿼리

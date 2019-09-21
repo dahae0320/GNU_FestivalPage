@@ -43,8 +43,8 @@
                     </div>
                 </div>
                 <div class="truck_top_right">
-                    <label for="t1_r_1"><h1 class="truck_subtitle" id="title_1">위치</h1></label>
-                    <label for="t1_r_2"><h1 class="truck_subtitle" id="title_2">메뉴</h1></label>
+                    <label for="t1_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">위치</h1></label>
+                    <label for="t1_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">메뉴</h1></label>
                     
                     <div class="folder_box">
 
@@ -75,17 +75,18 @@
                     </div>
                 </div>
             </div>
-        <div class="bigprenxt bigpre">
-            <label for="i3" class="pre"></label>     
-        </div>
-        <div class="bigprenxt bignxt">
-            <label for="i2" class="nxt"></label>
+            <div class="bigprenxt bigpre">
+                <label for="i3" class="pre"></label>     
+            </div>
+            <div class="bigprenxt bignxt">
+                <label for="i2" class="nxt"></label>
+            </div>
         </div>
     </div>
 
 
 
-<!--
+<!-- 트럭2 -->
     <div class="truck" id="truck_2">
         <h1 class="truck_title">두번째 가게</h1>
         <hr>
@@ -97,25 +98,25 @@
                 <div class="truck_top_left">
                     <h1 class="truck_subtitle">트럭</h1>
                     <div class="truck_top_image">
-                        <img src="{% static 'tk1.png' %}">
+                        <img src="{% static 'tk2.png' %}">
                     </div>
                 </div>
                 <div class="truck_top_right">
-                    <label for="f1"><h1 class="truck_subtitle" id="title_1">위치</h1></label>
-                    <label for="f2"><h1 class="truck_subtitle" id="title_2">메뉴</h1></label>
+                    <label for="t2_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">위치</h1></label>
+                    <label for="t2_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">메뉴</h1></label>
                     
                     <div class="folder_box">
 
 
 
                         <div class="truck_top_image top_left" id="t2_1" name="folders">
-                            <img src="{% static 'tk1_loc.jpg' %}">
+                            <img src="{% static 'tk2_loc.jpg' %}">
                         </div>
 
                         <div class="truck_bottom_contents" id="t2_2" name="folders">
                             <div class="truck_bottom_img">
                                 <div class="tbi1">
-                                    <img src="{% static 'tk1_food1.png' %}" >
+                                    <img src="{% static 'tk2_food1.png' %}" >
                                 </div>
                                 <div class="tbi2">
                                     <p>음식이름<br>(5,000원)</p>
@@ -123,7 +124,7 @@
                             </div>
                             <div class="truck_bottom_img">
                                 <div class="tbi1">
-                                    <img src="{% static 'tk1_food1.png' %}" >
+                                    <img src="{% static 'tk2_food1.png' %}" >
                                 </div>
                                 <div class="tbi2">
                                     <p>음식이름<br>(5,000원)</p>
@@ -133,16 +134,77 @@
                     </div>
                 </div>
             </div>
-        <div class="bigprenxt bigpre">
-            <label for="i3" class="pre"></label>     
-        </div>
-        <div class="bigprenxt bignxt">
-            <label for="i2" class="nxt"></label>
+            <div class="bigprenxt bigpre">
+                <label for="i1" class="pre"></label>     
+            </div>
+            <div class="bigprenxt bignxt">
+                <label for="i3" class="nxt"></label>
+            </div>
         </div>
     </div>
 
 
--->
+
+
+
+<!-- 트럭3 -->
+<div class="truck" id="truck_3">
+        <h1 class="truck_title">세번째 가게</h1>
+        <hr>
+        <div class="truck_total">
+            <div class="truck_top">
+                <input type="radio" name="folders" id="t3_r_1" checked>
+                <input type="radio" name="folders" id="t3_r_2">
+
+                <div class="truck_top_left">
+                    <h1 class="truck_subtitle">트럭</h1>
+                    <div class="truck_top_image">
+                        <img src="{% static 'tk3.png' %}">
+                    </div>
+                </div>
+                <div class="truck_top_right">
+                    <label for="t3_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">위치</h1></label>
+                    <label for="t3_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">메뉴</h1></label>
+                    
+                    <div class="folder_box">
+
+
+
+                        <div class="truck_top_image top_left" id="t3_1" name="folders">
+                            <img src="{% static 'tk3_loc.jpg' %}">
+                        </div>
+
+                        <div class="truck_bottom_contents" id="t3_2" name="folders">
+                            <div class="truck_bottom_img">
+                                <div class="tbi1">
+                                    <img src="{% static 'tk3_food1.png' %}" >
+                                </div>
+                                <div class="tbi2">
+                                    <p>음식이름<br>(5,000원)</p>
+                                </div>
+                            </div>
+                            <div class="truck_bottom_img">
+                                <div class="tbi1">
+                                    <img src="{% static 'tk3_food1.png' %}" >
+                                </div>
+                                <div class="tbi2">
+                                    <p>음식이름<br>(5,000원)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bigprenxt bigpre">
+                <label for="i2" class="pre"></label>     
+            </div>
+            <div class="bigprenxt bignxt">
+                <label for="i1" class="nxt"></label>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
