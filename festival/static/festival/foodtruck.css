@@ -10,6 +10,10 @@ a:hovor {
     text-decoration: none;
     
 }
+
+#i1, #i2, #i3 {
+    display: none;
+}
 /*
 *
 header
@@ -227,4 +231,76 @@ header
         display: none;
     }
 
+/*
+*
+슬라이드 기능
+*
+*/
+    .foodtruck {
+        position: relative;
+        padding-bottom: 100vh;
+    }
+
+    .truck {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pre, .nxt {
+        width: 12%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: rgba(88,88,88,.4);
+        z-index: 99;
+        cursor: pointer;
+    }
+    
+    .pre {
+        left:0;
+    }
+    .nxt {
+        right: 0;
+    }
+    
+
+    .bignav {
+        position: absolute;
+        width: 100%;
+        height: 11px;
+        bottom: 3%;
+        z-index: 99;
+        display:flex;
+        justify-content: space-around;
+    }
+    .nav {
+    }
+    
+    .dots{
+        top: -5px;
+        width: 18px;
+        height: 18px;
+        margin: 0 4px;
+        position: relative;
+        border-radius: 50%;
+        display: inline-block;
+        background: rgba(0,0,0,.6);
+    }
+    
+    .truck {
+        z-index: -1;
+    }
+    
+    #i1:checked ~ #truck_1,
+    #i2:checked ~ #truck_2,
+    #i3:checked ~ #truck_3{
+        z-index: 9; 
+    }
+    
+    #i1:checked ~ div #dot1,
+    #i2:checked ~ div #dot2,
+    #i3:checked ~ div #dot3{
+        background: #fff;
+    }
 }
