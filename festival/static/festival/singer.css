@@ -165,10 +165,16 @@ a:focus {text-decoration: none; }
         font-size:3em;
     }
 
-    .flex-container>.main-1016{
+    /* .flex-container>.main-1016{
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg) no-repeat;
         background-position: center;
         background-size: auto 100%;
         background-color:#411f51;
+    } */
+}
+
+@media screen and (max-width: 375px) {
+    .profile>.profile-box{
+        font-size:1.0rem;
     }
 }
