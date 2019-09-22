@@ -2,13 +2,34 @@ hr {
     background-color: #9D9D9D;
 }
 
+html {
+    scroll-behavior: smooth;
+    background-color: #484847;
+}
+
+a:hovor {
+    text-decoration: none;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+
+#i1, #i2, #i3 {
+    display: none;
+}
 /*
 *
 header
 *
 */
-.ft_header {
+.header_a {
+    display: block;
     flex-basis: 100%;
+}
+
+.ft_header {
     height: 100vh;
     background: url(/static/ft_img.jpg);
     background-position: center;
@@ -36,6 +57,7 @@ header
     font-size: 1.3rem;
     color: #A5A9AC;
 }
+
 /*
 *
 푸드트럭 정보
@@ -44,17 +66,31 @@ header
 
 .foodtruck {
     flex-basis: 100%;
-    background-color: dimgrey;
-    padding-bottom: 2em;
+    background-color: #484847;
 }
 
 .truck {
-    width: 95%;
-    margin: auto;
+    width: 94%;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 1em;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.truck_sub {
+    width: 100%;
+}
+
+.big_truck_title {
+    height: 10%;
 }
 .truck_title {
     text-align: center;
-    padding-top: 2em;
     font-size: 3rem;
     font-weight: bold;
     color: #ECECF1;
@@ -63,8 +99,17 @@ header
 .truck_subtitle {
     font-weight: bold;
     font-size: 2.5rem;
-    color: #ECECF1;
+    margin-bottom: 0;
+    border-radius: 0.3em 0.3em 0 0;
+    display: inline-block;
+    padding: 0.2em;
 }
+
+.truck_top_left h1 {
+    color: #ECECF1;  
+    background-color: #706F6F;
+}
+
 .truck_total {
 }
 
@@ -72,80 +117,247 @@ header
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 0;
     border-radius: 0.5em;
-    background-color: #838383;
+    background-color: #484847;
 }
 
 .truck_top_left {
     flex-basis: 50%;
     padding: 1em;
+    padding-top: 0;
 }
 
 .truck_top_right {
     flex-basis: 50%;
     padding: 1em;
+    padding-top: 0;
 }
 
 .truck_top_image {
     width: 100%;
+    height: 400px;
+    padding: 1em;
+    background-color: #706F6F;
+    border-radius: 0 0.3em 0.3em 0.3em;
 }
-
 .truck_top_image > img {
     max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .truck_bottom {
-    padding: 2em;
+    width:50%;
     border-radius: 0.5em;
     background-color: #838383;
+    display: inline-block;
+    padding: 1em;
+    padding-top: 0;
+
     
 }
 
 .truck_bottom_contents {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    padding: 1em;
+    background-color: #706F6F;
+    border-radius: 0 0.3em 0.3em 0.3em;
 }
 
 .truck_bottom_img {
-    flex-basis: 25%;
-    padding-right: 1.5em;
+    flex-basis: 50%;
+    padding-right: 0.5em;
+    max-height: 100%;
 }
 
-.truck_bottom_img > img {
+.tbi1 {
+    height: 80%;
+}
+
+.tbi2 {
+    height: 20%;
+}
+.truck_bottom_img > div > img{
     width: 100%;
+    height: 100%;
 }
 
-.truck_bottom_img > p {
+.truck_bottom_img > div > p {
     font-weight: bold;
     font-size: 1rem;
     color: #ECECF1;
+}
+
+
+/*
+*
+슬라이드 기능
+*
+*/
+.foodtruck {
+    position: relative;
+    padding-bottom: 100vh;
+}
+
+.bigprenxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+
+.pre, .nxt {
+    background: rgba(88,88,88,.4);
+    cursor: pointer;
+    height: 75px;
+}
+
+.bigpre {
+    left:0;
+}
+.bignxt {
+    right: 0;
+}
+
+.pre {
+    background: url(/static/left_icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nxt {
+    background: url(/static/right_icon.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.bignav {
+    position: absolute;
+    width: 100%;
+    height: 11px;
+    bottom: 3%;
+    z-index: 99;
+    display:flex;
+    justify-content: space-around;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+
+#i1:checked ~ #truck_1,
+#i2:checked ~ #truck_2,
+#i3:checked ~ #truck_3{
+    z-index: 9; 
+}
+
+#i1:checked ~ div #dot1,
+#i2:checked ~ div #dot2,
+#i3:checked ~ div #dot3{
+    background: #fff;
+}
+
+/*
+*
+폴더 기능
+*
+*/
+.folder_box {
+    position: relative;
+    padding-bottom: 400px;
+}
+
+.truck_bottom_contents {
+    position: absolute;
+    z-index: -1;
+}
+
+.top_left {
+    position: absolute;
+    z-index: 0;
+}
+
+#t1_r_1, #t1_r_2, #t2_r_1, #t2_r_2,#t3_r_1, #t3_r_2{
+    display: none;
+}
+
+#t1_r_1:checked ~ div #t1_1,
+#t1_r_2:checked ~ div #t1_2,
+#t2_r_1:checked ~ div #t2_1,
+#t2_r_2:checked ~ div #t2_2,
+#t3_r_1:checked ~ div #t3_1,
+#t3_r_2:checked ~ div #t3_2{
+    z-index: 9; 
+}
+
+.truck_top_right > label {
+    cursor: pointer;
+}
+
+.truck_top_right_loc {
+    background-color: #706F6F;
+    color: #ECECF1;  
+}
+
+.truck_top_right_menu {
+    background-color: silver;
+    color: #706F6F;
+}
+
+#t1_r_1:checked ~ div #title_1,
+#t1_r_2:checked ~ div #title_2,
+#t2_r_1:checked ~ div #title_1,
+#t2_r_2:checked ~ div #title_2,
+#t3_r_1:checked ~ div #title_1,
+#t3_r_2:checked ~ div #title_2{
+    color: #ECECF1;  
+    background-color: #706F6F;
+}
+
+#t1_r_1:checked ~ div #title_2,
+#t1_r_2:checked ~ div #title_1,
+#t2_r_1:checked ~ div #title_2,
+#t2_r_2:checked ~ div #title_1,
+#t3_r_1:checked ~ div #title_2,
+#t3_r_2:checked ~ div #title_1{  
+    background-color: silver;
+    color: #706F6F;
 }
 /*
 *
 미디어 쿼리
 *
 */
-@media screen and (max-width: 900px) {
-    .truck_top_left {
-        flex-basis: 100%;
+
+@media screen and (min-width: 701px) {
+    .bignav{
+        bottom: 6%;
     }
-    
-    .truck_top_right {
-        flex-basis: 100%;
-    }
-    
-    .truck_top_image > img {
-        width: 100%;
+
+    .truck_bottom_img > div > p {
+        font-size: 1.5rem;
     }
 }
 
+
 @media screen and (max-width: 700px) {
     /* header */
-    .ft_header {
-        height: 40vh;
-    }
-
     .ft_header_title > h1 {
         font-size: 3.5rem;
     }
@@ -161,12 +373,54 @@ header
     .truck_subtitle {
         font-size: 2rem;
     }
+
+    .truck_top_image {
+        height: 250px;
+    }
+    
+    .truck_bottom_contents {
+        height: 250px;
+    }
+
+    .truck_top_left {
+        flex-basis: 100%;
+    }
+
+    .truck_top_right {
+        flex-basis: 100%;
+        padding-bottom: 0;
+    }
+
+    .truck_bottom {
+        width: 100%;
+    }
+
+    .folder_box {
+        padding-bottom: 250px;
+    }
+
     
 }
 
-
-@media screen and (max-width: 470px) {
-    .truck_bottom_img {
-        flex-basis: 50%;
+@media screen and (max-width: 420px) {
+    .truck_top_image {
+        height: 200px;
     }
+
+    .truck_bottom_contents {
+        height: 200px;
+    }
+
+    .truck_bottom_img {
+        margin-bottom: 20px;
+    }
+
+    .truck_bottom_img > div > p {
+        font-size: 0.9rem;
+    }
+
+    .truck_top_left, .truck_top_right {
+        padding-top: 0;
+    }
+    
 }
