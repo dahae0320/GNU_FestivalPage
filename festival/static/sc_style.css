@@ -108,8 +108,8 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
 }
 
 .flex_container>h2>#below_select{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .flex_container>table>thead>tr>.pgname>#stamp{
@@ -151,11 +151,12 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     height: 30px;
 }
 
-h2{
+.flex_container>h2{
     margin: 0px;
     text-align: center;
     color: white;
     font-family: 'HSBombaram';
+    font-size: 29px;
 
 }
 
@@ -211,3 +212,13 @@ td{
     text-decoration: bold;
     background-color: darkmagenta;
 }
+
+#sch1{
+    background-color: rgb(207, 92, 92);
+}
+
+#sch1>a:hover, :visited{
+    text-decoration: none;
+    color: white;
+}
+
