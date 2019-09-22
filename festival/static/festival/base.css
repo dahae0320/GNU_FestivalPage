@@ -19,7 +19,7 @@
     top: 0;
     overflow: hidden;
     padding:10px 30px 10px 30px;
-    z-index:5;
+    z-index:10001;
 }
 /*nav에서 오른쪽 정렬할수 있도록.. ㅠㅠ*/
 .navbar a {
