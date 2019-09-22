@@ -6,7 +6,7 @@
 
 /*전체 배경색 지정 알아보기!!!!!!!!!!!!!!*******/
 *{
-    background-color: black;
+    background-color: rgb(44, 42, 42);
 }
 
 #upperimg{
@@ -21,21 +21,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
-    align-content: center;
+    /*align-content: center;*/
 
     width: 100%;
+
 }
 
 .menu_flex_item{
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     border-radius: 3px;
-    background: darkmagenta;
+    background: rgb(78, 69, 69);
 
-    flex-grow: 1;
+    flex-basis: 50%;
 
     font-family: 'locus_sangsang';
     font-size: 25px;
@@ -60,8 +61,8 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     width: 100%;
     height: auto;
 
-    border-top: 7px solid white;
-    border-bottom: 7px solid white;
+    /*border-top: 7px solid white;
+    border-bottom: 7px solid white;*/
 }
 
 /*
@@ -100,27 +101,26 @@ h2{
 
 
 table{
-    width: 100%;
+    width: 95%;
     height: auto;
     text-align: center;
     margin: 20px 0;
 
     background-color: white;
-    border-top: 5px solid darkmagenta;
-    border-bottom: 5px solid darkmagenta;
+    border: 5px solid rgb(78, 69, 69);
     color: white;
 }
 
 .table_title{
     font-family: 'HSBombaram';
-    font-size: 50px;
+    font-size: 40px;
     caption-side: top;
     color: white;
 }
 
 th{
-    border-block-end: 5px solid darkmagenta;
-    color: darkmagenta;
+    border-block-end: 5px solid rgb(78, 69, 69);
+    color: rbg(78, 69, 69);
     font-family: 'BMJUA';
     font-style: bold;
     font-size: 30px;
