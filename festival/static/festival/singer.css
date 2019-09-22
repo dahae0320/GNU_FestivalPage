@@ -13,9 +13,41 @@
 }
 
 html{
-    background-color:rgb(244, 235, 231)
+    /* background-color:rgb(244, 235, 231); */
+    background-color: black;
 }
 
+/* 
+    nav 영역 
+*/
+.nav-container{
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+
+    position:fixed;
+    
+}
+
+.nav-btn{
+    color:white;
+    text-decoration:none;
+    font-size: 1.3em;
+    font-family: 'NotoSerifKR', times ;
+    
+
+}
+
+a:hover { color: white; text-decoration: none; }
+a:focus {text-decoration: none; }
+
+/* 
+    container
+ */
 .flex-container { 
     display: flex; 
     /* flex-direction: row | row-reverse | column | column-reverse */ 
@@ -28,6 +60,7 @@ html{
     height:2000px;
     width:100%;
     background-color: rgb(244, 235, 231);
+    /* background-color:black; */
 }
 
 /* 
@@ -42,7 +75,7 @@ html{
 
     height:16.6%;
     width:100%;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +142,7 @@ html{
 
     font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
     font-size:1.3rem;
+    /* color:white; */
 
     display: flex;
     align-items: center;
@@ -118,4 +152,29 @@ html{
 /* 프로필 사진 */
 .profile-box>img{
     height:100%;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-container{
+        height:4000px;
+    }
+    .profile>.profile-box{
+        font-size:1.8em;
+    }
+    .main-title{
+        font-size:3em;
+    }
+
+    /* .flex-container>.main-1016{
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg) no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        background-color:#411f51;
+    } */
+}
+
+@media screen and (max-width: 375px) {
+    .profile>.profile-box{
+        font-size:1.0rem;
+    }
 }

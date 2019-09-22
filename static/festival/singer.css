@@ -1,158 +1,151 @@
-<link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet"> 
-<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+/* font-family */
+@font-face { 
+    font-family: 'Chosunilbo_myungjo'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face { 
+    font-family: 'NotoSerifKR'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+html{
+    background-color:rgb(244, 235, 231);
+    /* background-color: black; */
+}
+
+.container{
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-container { 
+    display: flex; 
+    /* flex-direction: row | row-reverse | column | column-reverse */ 
+    flex-direction: column; 
+    /* justify-content: flex-start | center | flex-end | space-between | space-around | space-evenly */ 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+
+    height:2000px;
+    width:100%;
+    background-color: rgb(244, 235, 231);
+    /* background-color:black; */
+}
+
+/* 
+    가수 메인사진 영역 
+*/
+/* 10월 16일 */
+.flex-container>.main-1016{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+
+    height:16.6%;
+    width:100%;
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 10월 17일 */
+.flex-container>.main-1017{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_17_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+
+    height:16.6%;
+    width:100%;
     
-<style>
-    @font-face { 
-        font-family: 'Chosunilbo_myungjo'; 
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); 
-            font-weight: normal; 
-            font-style: normal; 
-        }
-        @font-face { 
-            font-family: 'NotoSerifKR'; 
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); 
-            font-weight: normal; 
-            font-style: normal; 
-        }
-        /* font-family: 'hanna', serif; 
-        font-family: 'nanum Pen Script', serif;
-        font-family: 'hanna', serif;*/
-        /*<img src="example1.jpg" style="width:100%; max-width:1000px; vertical-align: middle;">*/
-        /* rgb(244, 235, 231) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* 10월 18일 */
+.flex-container>.main-1018{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_18_main.png);
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(34, 0, 88);
+    
+    height:16.6%;
+    width:100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* 가수 이름 */
+.main-title{
+    font-family: times, impact;
+    color: white;
+    font-size: 2em;   
+}
 
-        html{
-            /* background-color:rgb(244, 235, 231) */
-            background-color: black;
-        }
+/* 
+    가수 프로필 영역
+*/
+.flex-container>.profile{
+    height:16.6%;
+    width:100%;
+    text-align: center;  
+    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+/* 프로필 영역 3등분하는 박스  */
+.profile>.profile-box{
+    height:90%;
+    width:33.3%;
+    max-width:600px;
+    overflow: hidden;
 
-        .flex-container { 
-            display: flex; 
-            flex-direction: column; 
-            /* flex-direction: row | row-reverse | column | column-reverse */ 
-            justify-content: space-around; 
-            /* justify-content: flex-start | center | flex-end | space-between | space-around | space-evenly */ 
-            flex-wrap: wrap;
-            align-items: center;
-            height:2000px;
-            width:100%;
-            /* background-color:rgb(244, 235, 231); */
-            background-color: black;
-            /*background-color: rgba(0,0,0.4);*/
-        }
+    font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
+    font-size:1.3rem;
+    /* color:white; */
 
-        /* 메인 사진 */
-        .flex-container>.flex-item-main1{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_16_main.jpg' %}");
-            background-position: center;
-            background-size: cover;
-            background-color:rgb(34, 0, 88);
-            /* flex-grow:0; */
-            /* flex-direction: column;  */
-            height:16.6%;
-            width:100%;
-            overflow: hidden;
-            /* text-align: center;  */
-            vertical-align: middle;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* padding-bottom:-30%; */
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .flex-container>.flex-item-main2{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_17_main.jpg' %}");
-            background-position: center;
-            background-size: cover;
-            background-color:rgb(34, 0, 88);
-            /* flex-grow:0; */
-            /* flex-direction: column;  */
-            height:16.6%;
-            width:100%;
-            overflow: hidden;
-            /* text-align: center;  */
-            vertical-align: middle;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* padding-bottom:-30%; */
-        }
+/* 프로필 사진 */
+.profile-box>img{
+    height:100%;
+}
 
-        .flex-container>.flex-item-main3{
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("{% static '10_18_main.png' %}");
-            background-position: center;
-            background-size: cover;
-            background-color:rgb(34, 0, 88);
-            /* flex-grow:0; */
-            /* flex-direction: column;  */
-            height:16.6%;
-            width:100%;
-            overflow: hidden;
-            /* text-align: center;  */
-            vertical-align: middle;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* padding-bottom:-30%; */
-        }
+@media screen and (min-width: 700px) {
+    .flex-container{
+        height:4000px;
+    }
+    .profile>.profile-box{
+        font-size:1.8em;
+    }
+    .main-title{
+        font-size:3em;
+    }
 
-        /* 가수 사진 */
-        .flex-container>.flex-item-time{
-            flex-grow:0;
-            height:16.6%;
-            width:100%;
-            overflow: hidden;
-            text-align: center;  
-            
-            display: flex;
-            flex-direction: row; 
-            justify-content: space-around; 
-            /*flex-wrap: wrap;*/
-            align-items: center;
-        }
-
-        /* 메인 사진의 작은 박스 */
-        /* .small-item{
-            flex-grow:0;
-            height:33.3%;
-            width:100;
-            overflow: hidden;
-            font-family: 'Cursive', 'hanna', serif;
-            color:white;
-        } */
-
-        .small-item-name{
-            flex-grow:0;
-            overflow: hidden;
-            font-family: times, impact, 'hanna', serif;
-            color: white;
-            vertical-align: middle;
-            font-size: 2em;   
-        }
-
-        /* 가수 시간의 작은 박스 */
-        .flex-container>.flex-item-time>.small-item{
-            flex-grow:0;
-            height:90%;
-            width:25%;
-            max-width:600px;
-            overflow: hidden;
-            font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
-            color: white;
-            font-size:1.3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .flex-container>.flex-item-time>.small-item-about{
-            /* background-color:rgb(244, 235, 231); */
-            flex-grow:0;
-            overflow: hidden;
-        }
-
-    </style>
+    .flex-container>.main-1016{
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg) no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        background-color:#411f51;
+    }
+}
