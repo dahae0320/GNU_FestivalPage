@@ -17,6 +17,14 @@ html{
     /* background-color: black; */
 }
 
+.container{
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .flex-container { 
     display: flex; 
     /* flex-direction: row | row-reverse | column | column-reverse */ 
@@ -129,6 +137,9 @@ html{
     }
     .profile>.profile-box{
         font-size:1.8em;
+    }
+    .main-title{
+        font-size:3em;
     }
 
     .flex-container>.main-1016{
