@@ -20,7 +20,7 @@
     /**/
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; 
     /*align-content: center;*/
@@ -36,7 +36,7 @@
     border-radius: 3px;
     background: rgb(78, 69, 69);
 
-    flex-basis: 50%;
+    flex-grow: 1;
 
     font-family: 'locus_sangsang';
     font-size: 25px;
@@ -90,6 +90,16 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
 }
 */
 
+.pgname>#stamp{
+    width: 30px;
+    height: 30px;
+}
+
+.menu_flex_item>.scroll>#stamp{
+    width: 30px;
+    height: 30px;
+}
+
 h2{
     margin: 0px;
     text-align: center;
@@ -120,7 +130,8 @@ table{
 
 th{
     border-block-end: 5px solid rgb(78, 69, 69);
-    color: rbg(78, 69, 69);
+    background-color: white;
+    color: black;
     font-family: 'BMJUA';
     font-style: bold;
     font-size: 30px;
@@ -136,7 +147,13 @@ td{
 }
 
 .time{
-    width: 25%;
+    width: 50%;
+    color: rgb(214, 198, 198);
+}
+
+.place{
+    width: 50%;
+    color: rgb(214, 198, 198);
 }
 
 .flex_container>table>thead{

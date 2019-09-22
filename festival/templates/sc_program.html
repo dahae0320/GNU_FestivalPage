@@ -19,73 +19,62 @@
     <br>
     <div class="menu_flex_container">
         <!--버튼으로 교체?? 누르면 스크롤 js로 하는 건가?? // 일단 위치 설정만 해놓고 안에 글자 가운데 정렬 등 수정하자!-->
-        <div class="menu_flex_item"><a href="#target0" class="scroll">공통</a></div>
-        <div class="menu_flex_item"><a href="#target1" class="scroll">10.16</a></div>
-        <div class="menu_flex_item"><a href="#target2" class="scroll">10.17</a></div>
-        <div class="menu_flex_item"><a href="#target3" class="scroll">10.18</a></div>
+        <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target1" class="scroll"><img id="stamp" src="{% static 'idea.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target2" class="scroll"><img id="stamp" src="{% static 'fan.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target3" class="scroll"><img id="stamp" src="{% static 'running-man.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target4" class="scroll"><img id="stamp" src="{% static 'game-controller.png' %}"></a></div>
 
     </div>
 
 
     
     <div id="target0">
-    <div class="flex_container">
-        <!--<div class="flex_item_time">시간</div>
-        <div class="flex_item_contents">일정</div>-->
-        <table>
-            <caption class="table_title">공통</caption>
-            <thead>
-                <tr>
-                    <th class="time">시각</th>
-                    <th>행사</th>
-                    <th class="time">장소</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10:00~17:00</td>
-                    <td>스탬프 투어(도장 3개 이상 응모 가능)</td>
-                    <td>중앙도서관 앞 부스</td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        ♤ 부스 체험 후 스탬프 도장을 모아주세요! 3개의 스탬프를 다 모르면 푸짐한 경품들이 팡! 팡 터집니다!
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2 내용</td>
-                    <td>1 장소</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="flex_container">
+            <!--<div class="flex_item_time">시간</div>
+            <div class="flex_item_contents">일정</div>-->
+            <table>
+                <!--<caption class="table_title">공통</caption>-->
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'stamp.png' %}"> 스탬프 투어</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 부스 체험 후 스탬프 도장을 모아주세요! 3개의 스탬프를 다 모르면 푸짐한 경품들이 팡! 팡 터집니다!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    </div>
-
 
     <div id="target1">
         <div class="flex_container">
             <!--<div class="flex_item_time">시간</div>
             <div class="flex_item_contents">일정</div>-->
             <table>
-                <caption class="table_title">10월 16일</caption>
+                <!--<caption class="table_title">공통</caption>-->
                 <thead>
                     <tr>
-                        <th class="time">시각</th>
-                        <th>행사</th>
-                        <th class="time">장소</th>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'idea.png' %}"> 굿즈 배부</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>1 내용</td>
-                        <td>1 장소</td>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>2 내용</td>
-                        <td>1 장소</td>
+                        <td colspan="2">
+                            ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -93,66 +82,82 @@
     </div>
 
     <div id="target2">
-    <div class="flex_container">
+        <div class="flex_container">
             <!--<div class="flex_item_time">시간</div>
             <div class="flex_item_contents">일정</div>-->
             <table>
-                <caption class="table_title">10월 17일</caption>
+                <!--<caption class="table_title">공통</caption>-->
                 <thead>
                     <tr>
-                        <th class="time">시각</th>
-                        <th>행사</th>
-                        <th class="time">장소</th>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'fan.png' %}"> 하이유니브, 들어는 봤어?</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>1 내용</td>
-                        <td>1 장소</td>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>2 내용</td>
-                        <td>1 장소</td>
+                        <td colspan="2">
+                            ♤ 경상대학교 앱설치만 해주면, 이쁜 부채가 무료! 얼른와서 받아가세요~ (소진 시 제공 X)
+                        </td>
                     </tr>
                 </tbody>
             </table>
+        </div>
     </div>
-    </div>
-
-
 
     <div id="target3">
-    <div class="flex_container">
+        <div class="flex_container">
             <!--<div class="flex_item_time">시간</div>
             <div class="flex_item_contents">일정</div>-->
             <table>
-                <caption class="table_title">10월 18일</caption>
+                <!--<caption class="table_title">공통</caption>-->
                 <thead>
                     <tr>
-                        <th class="time">시각</th>
-                        <th>행사</th>
-                        <th class="time">장소</th>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'running-man.png' %}"> 방탈출</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>1 내용</td>
-                        <td>1 장소</td>
+                        <td class="time">미정</td>
+                        <td class="place">GNU컨벤션 1층</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>2 내용</td>
-                        <td>2 장소</td>
+                        <td colspan="2">
+                            ♤ 지금껏 그 누구도 겪어보지 못한 스릴만점 게임. 수상한 잡화점과 언니의 저주가 기다립니다💀
+                        </td>
                     </tr>
-                    
                 </tbody>
             </table>
-    </div>
+        </div>
     </div>
 
+    <div id="target4">
+            <div class="flex_container">
+                <!--<div class="flex_item_time">시간</div>
+                <div class="flex_item_contents">일정</div>-->
+                <table>
+                    <!--<caption class="table_title">공통</caption>-->
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'game-controller.png' %}"> 모두의 미니게임</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">중앙도서관 앞 부스</td>
+                            <td class="place">GNU컨벤션 1층</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                ♤ 추억이 방울방울 오락실게임기부터 경품 팡팡 명함뽑기까지! 한 번 시작하면 멈출 수 없는 미니게임 천국으로 오세요✨
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
     <script>
         jQuery(document).ready(function($) {
