@@ -13,7 +13,8 @@
 }
 
 html{
-    background-color:rgb(244, 235, 231)
+    background-color:rgb(244, 235, 231);
+    /* background-color: black; */
 }
 
 .flex-container { 
@@ -28,6 +29,7 @@ html{
     height:2000px;
     width:100%;
     background-color: rgb(244, 235, 231);
+    /* background-color:black; */
 }
 
 /* 
@@ -42,7 +44,7 @@ html{
 
     height:16.6%;
     width:100%;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +111,7 @@ html{
 
     font-family: times, 'NotoSerifKR', 'Chosunilbo_myungjo', 'hanna';
     font-size:1.3rem;
+    /* color:white; */
 
     display: flex;
     align-items: center;
@@ -118,4 +121,20 @@ html{
 /* 프로필 사진 */
 .profile-box>img{
     height:100%;
+}
+
+@media screen and (min-width: 700px) {
+    .flex-container{
+        height:4000px;
+    }
+    .profile>.profile-box{
+        font-size:1.8em;
+    }
+
+    .flex-container>.main-1016{
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg) no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        background-color:#411f51;
+    }
 }
