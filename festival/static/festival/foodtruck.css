@@ -67,7 +67,7 @@ header
 
 .foodtruck {
     flex-basis: 100%;
-    background-color: dimgrey;
+    background-color: #484847;
     padding-bottom: 2em;
 }
 
@@ -109,7 +109,7 @@ header
     flex-wrap: wrap;
     padding: 1em;
     border-radius: 0.5em;
-    background-color: #838383;
+    background-color: #484847;
 }
 
 .truck_top_left {
