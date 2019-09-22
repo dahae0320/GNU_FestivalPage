@@ -43,6 +43,7 @@
     background-color: rgb(116, 112, 80);
     padding: 2rem;
     text-align: center;
+    z-index: 99999;
 }
 
 
