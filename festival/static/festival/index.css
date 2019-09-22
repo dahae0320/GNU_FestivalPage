@@ -1,34 +1,82 @@
 .backbox {
-    background: linear-gradient(to bottom, rgb(41, 40, 36), rgb(83, 81, 72)) ;
+    background: black ;
     width: 100%;
 }
-
-/*.box {
-    background-color:white;
-    height: 300px;
-    min-width: 60%;
-    max-width: 60%;
-    margin: auto;
+.main_image {
+    width:100%;
+    height: 100vh;
+    background: url(/static/festival/main2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    align-items: center;
+}
+.inner {
+    width: 100%;
+}
+.inner header {
+    font-size: 8rem;
+    line-height: 1.1;
+    font-family: 'GyeonggiBatang', cursive;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255);
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
+    text-transform: none;
+    letter-spacing: -15px;
 }
 .box_image {
-    max-width:100%;
-    max-height:100%;
-    opacity: 0.4;
-    margin: auto;
-    object-fit: cover;
-} */
-
-.box_image {
-    width:80%;
+    width:100%;
     display:block;
     z-index:3;
     opacity: 0.7;
-    margin: 0px auto;
-    margin-top:100px;
-    margin-bottom: 100px;
-    border-radius: 3rem;
-    box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.festa {
+    width:100%;
+    height: 100vh;
+    background: url(/static/festival/festa.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.sing {
+    width:100%;
+    height: 100vh;
+    background: url(/static/festival/sing.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.foodtruck {
+    width:100%;
+    height: 100vh;
+    background: url(/static/festival/foodtruck.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.click a{
+    text-decoration: none;
+    font-size: 50px;
+    color:white;
+}
+.clikc a:active{
+    background-color: white;
+    color:black;
+}
+
+@media screen and (max-width: 768px) {
+    .inner header {
+        font-size: 4rem;
+        letter-spacing: -6px;
+    }
 }
