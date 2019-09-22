@@ -13,18 +13,41 @@
 }
 
 html{
-    background-color:rgb(244, 235, 231);
-    /* background-color: black; */
+    /* background-color:rgb(244, 235, 231); */
+    background-color: black;
 }
 
-.container{
+/* 
+    nav 영역 
+*/
+.nav-container{
+    width:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     display: flex; 
     flex-direction:row; 
     justify-content: space-around; 
     flex-wrap: wrap;
     align-items: center;
+
+    position:fixed;
+    
 }
 
+.nav-btn{
+    color:white;
+    text-decoration:none;
+    font-size: 1.3em;
+    font-family: 'NotoSerifKR', times ;
+    
+
+}
+
+a:hover { color: white; text-decoration: none; }
+a:focus {text-decoration: none; }
+
+/* 
+    container
+ */
 .flex-container { 
     display: flex; 
     /* flex-direction: row | row-reverse | column | column-reverse */ 
