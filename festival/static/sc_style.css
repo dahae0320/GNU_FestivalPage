@@ -98,8 +98,8 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     align-content: center;
 
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     width: 100%;
     height: auto;
 
@@ -185,7 +185,7 @@ th{
     color: black;
     font-family: 'BMJUA';
     font-style: bold;
-    font-size: 30px;
+    font-size: 28px;
 
     padding: 10px;
 }
