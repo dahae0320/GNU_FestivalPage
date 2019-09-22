@@ -1,5 +1,5 @@
 .backbox {
-    background: linear-gradient(to bottom, rgb(41, 40, 36), rgb(83, 81, 72)) ;
+    background: black ;
     width: 100%;
 }
 .main_image {
@@ -37,6 +37,10 @@
     background: url(/static/festival/festa.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .sing {
     width:100%;
@@ -44,6 +48,10 @@
     background: url(/static/festival/sing.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .foodtruck {
     width:100%;
@@ -51,6 +59,19 @@
     background: url(/static/festival/foodtruck.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.click a{
+    text-decoration: none;
+    font-size: 50px;
+    color:white;
+}
+.clikc a:active{
+    background-color: white;
+    color:black;
 }
 
 @media screen and (max-width: 768px) {

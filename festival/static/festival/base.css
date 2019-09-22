@@ -6,7 +6,7 @@
     font-style: normal; 
 }
 
-.container1 {
+.root {
     display: flex;
     flex-wrap: wrap;
 }
@@ -58,7 +58,7 @@
         color:rgb(0,0,0);
         border-radius:2px;
     }*/
-    .navbar {
+    .navbar a:not(.main_logo){
         display:none;
     }
 }
