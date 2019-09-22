@@ -9,6 +9,10 @@
 	Footer
 ====================== */
 /* Main Footer */
+
+.footer {
+  z-index: 99999;
+}
 footer .main-footer {
     padding: 20px 0;
     background: #252525;
