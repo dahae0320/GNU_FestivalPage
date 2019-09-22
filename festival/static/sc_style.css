@@ -14,6 +14,42 @@
     height: auto;
 }
 
+.select_flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    width: 100%;
+
+}
+
+.select_flex_item{
+    padding: 10px;
+    text-align: center;
+
+    flex-grow: 1;
+
+    font-family: 'locus_sangsang';
+    font-size: 15px;
+
+    background-color: black;
+
+
+}
+
+.select_flex_item>a:hover, :visited{
+    color: white;
+    text-decoration: none;
+}
+
+.select_flex_item>a>#select{
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+
+}
+
 .menu_flex_container{
     /*flex-direction: 가로정렬 / flex-wrap: 개행여부 설정 / justify-content: 가운데로정렬*/
     /*align-items: 가운데를 중심으로 수직방향 정렬 / align-content: 어차피 margin을 줬기 때문에 가운데를 기준으로 따닥따닥 붙이는 것 선택*/
@@ -62,11 +98,18 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     align-content: center;
 
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     height: auto;
 
     /*border-top: 7px solid white;
     border-bottom: 7px solid white;*/
+}
+
+.flex_container>h2>#below_select{
+    width: 40px;
+    height: 40px;
 }
 
 .flex_container>table>thead>tr>.pgname>#stamp{

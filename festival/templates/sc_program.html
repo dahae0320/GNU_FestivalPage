@@ -16,7 +16,16 @@
 
 <body>
     <img id="upperimg" src="{% static 'balloon-1373161_1920.jpg' %}">
-    <br>
+    
+    <div class="select_flex_container">
+        <div class="select_flex_item"><a href=""><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기</a></div>
+        <div class="select_flex_item"><a href=""><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기</a></div>
+    </div>
+
+    <div class="flex_container">
+        <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
+    </div>
+
     <div class="menu_flex_container">
         <!--버튼으로 교체?? 누르면 스크롤 js로 하는 건가?? // 일단 위치 설정만 해놓고 안에 글자 가운데 정렬 등 수정하자!-->
         <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
