@@ -230,4 +230,10 @@ footer .main-footer {
     -o-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
   }
+  
+  @media(max-width:500px) {
+    .invi {
+      display:none;
+    }
   }
+

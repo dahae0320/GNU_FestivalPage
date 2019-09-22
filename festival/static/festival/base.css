@@ -278,3 +278,9 @@ footer .main-footer {
     -o-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
   }
+
+  @media(max-width:800px) {
+    .invi {
+      display:none;
+    }
+  }
