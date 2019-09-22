@@ -8,6 +8,22 @@
     background: url(/static/festival/main2.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.inner {
+    width: 100%;
+}
+.inner header {
+    font-size: 8rem;
+    line-height: 1.1;
+    font-family: 'GyeonggiBatang', cursive;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255);
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
+    text-transform: none;
+    letter-spacing: -15px;
 }
 .box_image {
     width:100%;
@@ -35,4 +51,11 @@
     background: url(/static/festival/foodtruck.jpg);
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .inner header {
+        font-size: 4rem;
+        letter-spacing: -6px;
+    }
 }
