@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 <html>
 
 <head>
+    {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +14,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Courgette|Fredoka+One|Indie+Flower|Jua|Nanum+Brush+Script|Orbitron|Patrick+Hand|Permanent+Marker|Satisfy|Sunflower:300" rel="stylesheet">
     <script src="../static/sc_edit.js"></script>
     <title>학생회 프로그램</title>
+    {% endblock %}
 </head>
 
 <body>
+    {% block content %}
+
+
     <div id="superupper"></div>
 
     <div id="upperimg">축제일정</div>
@@ -375,7 +380,9 @@
         </div>  
         
     </div>
+    {% endblock%}
 
+    {% block script %}
     <script>
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event){            
@@ -384,6 +391,8 @@
             });
         })
     </script>
+    {% endblock %}
+    
 </body>
 
 </html>
