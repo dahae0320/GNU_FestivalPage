@@ -21,7 +21,6 @@
     padding:10px 30px 10px 30px;
     z-index:10001;
 }
-/*nav에서 오른쪽 정렬할수 있도록.. ㅠㅠ*/
 .navbar a {
     text-decoration: none;
     font-size: 20px;
@@ -49,16 +48,14 @@
 
 /*모바일 웹*/
 @media screen and (max-width: 768px) {
-    /*.navbar {
-        opacity: 1;
-        padding:10px;
-    }
-    .navbar a:active:not(.main_logo) {
-        background-color:rgb(255, 255, 255);
-        color:rgb(0,0,0);
-        border-radius:2px;
-    }*/
     .navbar .main_logo{
         display:none;
+    }
+}
+
+/*iPhone 5/SE */
+@media screen and (max-width:350px) {
+    .navbar a {
+        font-size:15px;
     }
 }
