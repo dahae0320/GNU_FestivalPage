@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+<<<<<<< HEAD
 # Create your views here.
 
 def foodtruck(request):
@@ -12,3 +13,8 @@ def scprogram(request):
     return render(request, 'scprogram.html')
 def singer(request):
     return render(request, 'singer.html')
+=======
+
+def scprogram(request):
+    return render(request, 'sc_program.html')
+>>>>>>> studentprogram
