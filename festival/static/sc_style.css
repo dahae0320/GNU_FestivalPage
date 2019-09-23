@@ -2,17 +2,33 @@
 @font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-
-/*전체 배경색 지정 알아보기!!!!!!!!!!!!!!*******/
 *{
     background-color: rgb(44, 42, 42);
 }
 
 #upperimg{
     max-width: 100%;
-    height: auto;
+    height: 80vh;
+    background: url(/static/photo-1472653431158-6364773b2a56.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin: auto;
+    padding: auto;
+    font-family: 'Malssami815';
+    font-size: 60px;
+    color: white;
+
 }
+
 
 .select_flex_container{
     display: flex;
@@ -26,6 +42,7 @@
 .select_flex_item{
     padding: 10px;
     text-align: center;
+    height: 20vh;
 
     flex-grow: 1;
 
@@ -37,7 +54,7 @@
 
 }
 
-.select_flex_item>a:hover, :visited{
+.select_flex_item>a:hover, :visited, :link{
     color: white;
     text-decoration: none;
 }

@@ -11,147 +11,44 @@
     <link rel="stylesheet" type="text/css" href="{% static 'sc_style.css' %}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Courgette|Fredoka+One|Indie+Flower|Jua|Nanum+Brush+Script|Orbitron|Patrick+Hand|Permanent+Marker|Satisfy|Sunflower:300" rel="stylesheet">
+    <script src="../static/sc_edit.js"></script>
     <title>학생회 프로그램</title>
 </head>
 
 <body>
-    <div id="superupper">
-    <img id="upperimg" src="{% static 'balloon-1373161_1920.jpg' %}">
-    </div>
-    
+    <div id="superupper"></div>
+
+    <div id="upperimg">축제일정</div>
+
     <div class="select_flex_container">
-        <div class="select_flex_item"><a href="#daypg"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기</a></div>
-        <div class="select_flex_item"><a href="#nightpg"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기</a></div>
-    </div>
-
-    <div id="daypg"></div>
-    <div class="flex_container">
-        <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
-    </div>
-
-    <div class="menu_flex_container">
-        <!--버튼으로 교체?? 누르면 스크롤 js로 하는 건가?? // 일단 위치 설정만 해놓고 안에 글자 가운데 정렬 등 수정하자!-->
-        <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target1" class="scroll"><img id="stamp" src="{% static 'idea.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target2" class="scroll"><img id="stamp" src="{% static 'fan.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target3" class="scroll"><img id="stamp" src="{% static 'running-man.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target4" class="scroll"><img id="stamp" src="{% static 'game-controller.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target5" class="scroll"><img id="stamp" src="{% static 'orange-juice.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target6" class="scroll"><img id="stamp" src="{% static 'flag.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target7" class="scroll"><img id="stamp" src="{% static 'medal.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target8" class="scroll"><img id="stamp" src="{% static 'shopping-basket.png' %}"></a></div>
-        <div class="menu_flex_item"><a href="#target9" class="scroll"><img id="stamp" src="{% static 'mic.png' %}"></a></div>
+        <div class="select_flex_item"><a href="javascript:doDisplay()"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기</a></div>
+        <div class="select_flex_item"><a href="javascript:doDisplay1()"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기</a></div>
     </div>
 
     <a href="#superupper"><div class="forup">
         <img id="arrow" src="{% static 'arrow.png' %}">
     </div></a>
-    
-    <div id="target0">
-        <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'stamp.png' %}"> 스탬프 투어</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">10:00~17:00</td>
-                        <td class="place">중앙도서관 앞 부스</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 부스 체험 후 스탬프 도장을 모아주세요! 3개의 스탬프를 다 모르면 푸짐한 경품들이 팡! 팡 터집니다!
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 
-    <div id="target1">
+    <div id="daypg">
         <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'idea.png' %}"> 굿즈 배부</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">10:00~17:00</td>
-                        <td class="place">중앙도서관 앞 부스</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
         </div>
-    </div>
 
-    <div id="target2">
-        <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'fan.png' %}"> 하이유니브, 들어는 봤어?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">10:00~17:00</td>
-                        <td class="place">중앙도서관 앞 부스</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 경상대학교 앱설치만 해주면, 이쁜 부채가 무료! 얼른와서 받아가세요~ (소진 시 제공 X)
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="menu_flex_container">
+            <!--버튼으로 교체?? 누르면 스크롤 js로 하는 건가?? // 일단 위치 설정만 해놓고 안에 글자 가운데 정렬 등 수정하자!-->
+            <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target1" class="scroll"><img id="stamp" src="{% static 'idea.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target2" class="scroll"><img id="stamp" src="{% static 'fan.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target3" class="scroll"><img id="stamp" src="{% static 'running-man.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target4" class="scroll"><img id="stamp" src="{% static 'game-controller.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target5" class="scroll"><img id="stamp" src="{% static 'orange-juice.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target6" class="scroll"><img id="stamp" src="{% static 'flag.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target7" class="scroll"><img id="stamp" src="{% static 'medal.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target8" class="scroll"><img id="stamp" src="{% static 'shopping-basket.png' %}"></a></div>
+            <div class="menu_flex_item"><a href="#target9" class="scroll"><img id="stamp" src="{% static 'mic.png' %}"></a></div>
         </div>
-    </div>
-
-    <div id="target3">
-        <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'running-man.png' %}"> 방탈출</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">미정</td>
-                        <td class="place">GNU컨벤션 1층</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 지금껏 그 누구도 겪어보지 못한 스릴만점 게임. 수상한 잡화점과 언니의 저주가 기다립니다💀
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div id="target4">
+        
+        <div id="target0">
             <div class="flex_container">
                 <!--<div class="flex_item_time">시간</div>
                 <div class="flex_item_contents">일정</div>-->
@@ -159,25 +56,25 @@
                     <!--<caption class="table_title">공통</caption>-->
                     <thead>
                         <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'game-controller.png' %}"> 모두의 미니게임</th>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'stamp.png' %}"> 스탬프 투어</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="time">10:00 ~ 17:00</td>
+                            <td class="time">10:00~17:00</td>
                             <td class="place">중앙도서관 앞 부스</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 추억이 방울방울 오락실게임기부터 경품 팡팡 명함뽑기까지! 한 번 시작하면 멈출 수 없는 미니게임 천국으로 오세요✨
+                                ♤ 부스 체험 후 스탬프 도장을 모아주세요! 3개의 스탬프를 다 모르면 푸짐한 경품들이 팡! 팡 터집니다!
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-    </div>
+        </div>
 
-    <div id="target5">
+        <div id="target1">
             <div class="flex_container">
                 <!--<div class="flex_item_time">시간</div>
                 <div class="flex_item_contents">일정</div>-->
@@ -185,25 +82,25 @@
                     <!--<caption class="table_title">공통</caption>-->
                     <thead>
                         <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'orange-juice.png' %}"> 누가 먼저 마시나</th>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'idea.png' %}"> 굿즈 배부</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="time">11:00 ~ 14:00</td>
+                            <td class="time">10:00~17:00</td>
                             <td class="place">중앙도서관 앞 부스</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 음료 빨리 마시기 대회! 과연, 승자는 누구?!<br>[18일은 운영하지 않습니다.]
+                                ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-    </div>
+        </div>
 
-    <div id="target6">
+        <div id="target2">
             <div class="flex_container">
                 <!--<div class="flex_item_time">시간</div>
                 <div class="flex_item_contents">일정</div>-->
@@ -211,77 +108,25 @@
                     <!--<caption class="table_title">공통</caption>-->
                     <thead>
                         <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'flag.png' %}"> 우당탕릴레이</th>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'fan.png' %}"> 하이유니브, 들어는 봤어?</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="time">12:00 ~ 18:00</td>
-                            <td class="place">중앙식당 앞 광장</td>
+                            <td class="time">10:00~17:00</td>
+                            <td class="place">중앙도서관 앞 부스</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 우당탕탕 버블슈트와 재미있는 랜덤게임 덤으로 푸드트럭이용권까지
+                                ♤ 경상대학교 앱설치만 해주면, 이쁜 부채가 무료! 얼른와서 받아가세요~ (소진 시 제공 X)
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-    </div>
-
-    <div id="target7">
-        <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'medal.png' %}"> 출발 개척팀</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">미정</td>
-                        <td class="place">야외공연장 뒤 남편 주차장</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 어디서도 쉽게 볼 수 없는 익스트림 스포츠가 경상대에 상륙!🚀 빨리 달릴 수록 문상이💸 당신의 주머니에 있을것이니 한계에 도전해봐 Just do it🤜
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-    </div>
 
-    <div id="target8">
-        <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
-            <table>
-                <!--<caption class="table_title">공통</caption>-->
-                <thead>
-                    <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'shopping-basket.png' %}"> 플리마켓</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time">미정</td>
-                        <td class="place">중도 앞 교양동 가는 길</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            ♤ 설명 들어가는 곳
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div id="target9">
+        <div id="target3">
             <div class="flex_container">
                 <!--<div class="flex_item_time">시간</div>
                 <div class="flex_item_contents">일정</div>-->
@@ -289,13 +134,143 @@
                     <!--<caption class="table_title">공통</caption>-->
                     <thead>
                         <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 슈퍼스타 G</th>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'running-man.png' %}"> 방탈출</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="time">미정</td>
-                            <td class="place">야외 공연장</td>
+                            <td class="place">GNU컨벤션 1층</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                ♤ 지금껏 그 누구도 겪어보지 못한 스릴만점 게임. 수상한 잡화점과 언니의 저주가 기다립니다💀
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="target4">
+                <div class="flex_container">
+                    <!--<div class="flex_item_time">시간</div>
+                    <div class="flex_item_contents">일정</div>-->
+                    <table>
+                        <!--<caption class="table_title">공통</caption>-->
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'game-controller.png' %}"> 모두의 미니게임</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">10:00 ~ 17:00</td>
+                                <td class="place">중앙도서관 앞 부스</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    ♤ 추억이 방울방울 오락실게임기부터 경품 팡팡 명함뽑기까지! 한 번 시작하면 멈출 수 없는 미니게임 천국으로 오세요✨
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+        <div id="target5">
+                <div class="flex_container">
+                    <!--<div class="flex_item_time">시간</div>
+                    <div class="flex_item_contents">일정</div>-->
+                    <table>
+                        <!--<caption class="table_title">공통</caption>-->
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'orange-juice.png' %}"> 누가 먼저 마시나</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">11:00 ~ 14:00</td>
+                                <td class="place">중앙도서관 앞 부스</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    ♤ 음료 빨리 마시기 대회! 과연, 승자는 누구?!<br>[18일은 운영하지 않습니다.]
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+        <div id="target6">
+                <div class="flex_container">
+                    <!--<div class="flex_item_time">시간</div>
+                    <div class="flex_item_contents">일정</div>-->
+                    <table>
+                        <!--<caption class="table_title">공통</caption>-->
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'flag.png' %}"> 우당탕릴레이</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">12:00 ~ 18:00</td>
+                                <td class="place">중앙식당 앞 광장</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    ♤ 우당탕탕 버블슈트와 재미있는 랜덤게임 덤으로 푸드트럭이용권까지
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+        <div id="target7">
+            <div class="flex_container">
+                <!--<div class="flex_item_time">시간</div>
+                <div class="flex_item_contents">일정</div>-->
+                <table>
+                    <!--<caption class="table_title">공통</caption>-->
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'medal.png' %}"> 출발 개척팀</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">미정</td>
+                            <td class="place">야외공연장 뒤 남편 주차장</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                ♤ 어디서도 쉽게 볼 수 없는 익스트림 스포츠가 경상대에 상륙!🚀 빨리 달릴 수록 문상이💸 당신의 주머니에 있을것이니 한계에 도전해봐 Just do it🤜
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="target8">
+            <div class="flex_container">
+                <!--<div class="flex_item_time">시간</div>
+                <div class="flex_item_contents">일정</div>-->
+                <table>
+                    <!--<caption class="table_title">공통</caption>-->
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'shopping-basket.png' %}"> 플리마켓</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">미정</td>
+                            <td class="place">중도 앞 교양동 가는 길</td>
                         </tr>
                         <tr>
                             <td colspan="2">
@@ -305,71 +280,101 @@
                     </tbody>
                 </table>
             </div>
-    </div>
+        </div>
 
-    <div id="nightpg"></div>
-    <div class="flex_container">
-        <h2><img id="below_select" src="{% static 'moon.png' %}"> 밤 프로그램(일별)</h2>
-    </div>
-
-    <div class="menu_flex_container">
-        <table>
-            <thead>
-                <tr>
-                    <th>시각</th>
-                    <th>10.16</th>
-                    <th>10.17</th>
-                    <th>10.18</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>18시</td>
-                    <td id="sch1" rowspan="2"><a href="#target-1">행사1</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>19시</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>20시</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="target9">
+                <div class="flex_container">
+                    <!--<div class="flex_item_time">시간</div>
+                    <div class="flex_item_contents">일정</div>-->
+                    <table>
+                        <!--<caption class="table_title">공통</caption>-->
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 슈퍼스타 G</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time">미정</td>
+                                <td class="place">야외 공연장</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    ♤ 설명 들어가는 곳
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
 
     </div>
 
-    <div id="target-1">
+    <div id="nightpg">
         <div class="flex_container">
-            <!--<div class="flex_item_time">시간</div>
-            <div class="flex_item_contents">일정</div>-->
+            <h2><img id="below_select" src="{% static 'moon.png' %}"> 밤 프로그램(일별)</h2>
+        </div>
+
+        <div class="menu_flex_container">
             <table>
-                <!--<caption class="table_title">공통</caption>-->
                 <thead>
                     <tr>
-                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 동아리 공연</th>
+                        <th>시각</th>
+                        <th>10.16</th>
+                        <th>10.17</th>
+                        <th>10.18</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time">미정</td>
-                        <td class="place">야외 공연장</td>
+                        <td>18시</td>
+                        <td id="sch1" rowspan="2"><a href="#target-1">행사1</a></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            ♤ 순서
-                        </td>
+                        <td>19시</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>20시</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
+
         </div>
-    </div>        
+
+        <div id="target-1">
+            <div class="flex_container">
+                <!--<div class="flex_item_time">시간</div>
+                <div class="flex_item_contents">일정</div>-->
+                <table>
+                    <!--<caption class="table_title">공통</caption>-->
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 동아리 공연</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time">미정</td>
+                            <td class="place">야외 공연장</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                ♤ 순서
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+        
+    </div>
 
     <script>
         jQuery(document).ready(function($) {
