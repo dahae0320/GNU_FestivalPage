@@ -40,7 +40,7 @@
 }
 
 .select_flex_item{
-    padding: 10px;
+    padding: 3vh;
     text-align: center;
     height: 20vh;
 
@@ -60,8 +60,8 @@
 }
 
 .select_flex_item>a>#select{
-    width: 50px;
-    height: 50px;
+    width: 8vh;
+    height: 8vh;
 
     background-color: black;
 
@@ -162,31 +162,6 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     background-color: white;
 }
 
-/*
-.flex_item_time{
-    flex-grow: 2;
-    
-    color: white;
-    margin: 20px;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    border-radius: 3px;
-    background: white;
-}
-
-.flex_item_contents{
-    flex-grow: 9;
-
-    margin: 20px;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    border-radius: 3px;
-    background: white;
-}
-*/
-
 .pgname>#stamp{
     width: 30px;
     height: 30px;
@@ -202,7 +177,7 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     text-align: center;
     color: white;
     font-family: 'HSBombaram';
-    font-size: 29px;
+    font-size: 4vh;
 
 }
 
