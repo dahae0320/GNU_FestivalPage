@@ -1,33 +1,20 @@
-<!DOCTYPE html>
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-<html>
-
-<head>
     {% block head %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="{% static 'sc_style.css' %}">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Caveat|Courgette|Fredoka+One|Indie+Flower|Jua|Nanum+Brush+Script|Orbitron|Patrick+Hand|Permanent+Marker|Satisfy|Sunflower:300" rel="stylesheet">
-    <script src="../static/sc_edit.js"></script>
-    <title>학생회 프로그램</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'festival/sc_style.css' %}">
+    <script src="../static/festival/sc_edit.js"></script>
     {% endblock %}
-</head>
 
-<body>
+
+
     {% block content %}
-
-
     <div id="superupper"></div>
-
     <div id="upperimg">축제일정</div>
 
     <div class="select_flex_container">
-        <div class="select_flex_item"><a href="javascript:doDisplay()"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기▶</a></div>
-        <div class="select_flex_item"><a href="javascript:doDisplay1()"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기▶</a></div>
+        <div class="select_flex_item"><a style ="color: white; text-decoration: none;" href="javascript:doDisplay()"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기▶</a></div>
+        <div class="select_flex_item"><a style ="color: white; text-decoration: none;"href="javascript:doDisplay1()"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기▶</a></div>
     </div>
 
     <a href="#superupper"><div class="forup">
@@ -333,7 +320,7 @@
                 <tbody>
                     <tr>
                         <td>18시</td>
-                        <td id="sch1" rowspan="2"><a href="#target-1">행사1</a></td>
+                        <td id="sch1" rowspan="2"><a style ="color: white; text-decoration: none;" href="#target-1">행사1</a></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -377,22 +364,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>  
-        
-    </div>
-    {% endblock%}
-
-    {% block script %}
-    <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){            
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-            });
-        })
-    </script>
-    {% endblock %}
-    
-</body>
-
-</html>
+            </div>
+            </div>
+             
+        {% endblock %}       
