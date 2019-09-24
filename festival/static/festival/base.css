@@ -224,3 +224,33 @@ footer .main-footer {
     -o-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
   }
+
+  .justWhite {
+    position: absolute;
+    width: 100%
+  }
+  
+  @media(max-width:500px) {
+          footer .main-footer {
+            padding: 10px 0;
+          }
+          .footer-copyright {
+            padding: 0;
+          }
+  
+          .invi {
+            display:none;
+          }
+          .widget {
+            margin-bottom: 30px;
+          }
+          .widget.no-box {
+            margin-bottom: 9px;
+          }
+          .widget.subscribe p {
+            margin-bottom: 12px;
+          }
+          .widget-title {
+            margin-bottom: 10px;
+          }
+        }
