@@ -10,6 +10,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.nav_back {
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+  position: fixed;
+  z-index: 5000;
+  opacity: 0.2;
+}
 .navbar {
     justify-content: flex-end;
     width: 100%;
