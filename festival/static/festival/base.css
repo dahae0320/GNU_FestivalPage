@@ -11,32 +11,34 @@
     flex-wrap: wrap;
 }
 
-.nav_back {
-  width: 100%;
-  height: 50px;
-  background-color: gray;
-  position: fixed;
-  z-index: 5000;
-  opacity: 0.2;
-}
+/* .nav_back {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    position: fixed;
+    z-index: 5000;
+    opacity: 0.2;
+    background: linear-gradient(rgba(156, 156, 156, 0.219), rgba(156, 156, 156, 0.219));
+} */
 .navbar {
-    justify-content: flex-end;
+    background: linear-gradient(rgba(156, 156, 156, 0.219), rgba(156, 156, 156, 0.219));
+    justify-content: space-between;
     width: 100%;
     background-color: transparent;
     opacity: 1;
     position: fixed;
     top: 0;
     overflow: hidden;
-    padding:10px 30px 10px 30px;
+    /* padding:10px 30px 10px 30px; */
     z-index:10001;
 }
 .navbar a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    float:left;
-    margin:0 3px 0 3px;
-    padding:0 10px 0 10px;
+    /* float:left; */
+    /* margin:0 3px 0 3px;
+    padding:0 10px 0 10px; */
     font-family: 'GyeonggiBatang';
 }
 .navbar a:hover:not(.main_logo) {
@@ -46,7 +48,7 @@
 }
 .navbar .main_logo {
     font-size:20px;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 .navbar .home {
     background: url(/static/festival/homepage_white.png);
@@ -70,19 +72,19 @@
     .navbar .main_logo{
         display: inline;
     }
-    .navbar {
+    /* .navbar {
         padding: 10px 0px 10px 15px;
-    }
+    } */
 }
 
 /*iPhone 5*/
 @media screen and (max-width: 375px) {
     .navbar a {
-        font-size: 15px;
+        font-size: 18px;
     }
-    .navbar {
+    /* .navbar {
         padding:10px 0px 10px 15px;
-    } 
+    }  */
 }
 
 /*====================
