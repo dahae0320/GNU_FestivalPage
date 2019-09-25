@@ -232,8 +232,27 @@ footer .main-footer {
   }
   
   @media(max-width:500px) {
+    footer .main-footer {
+      padding: 0 0;
+    }
+    .footer-copyright {
+      padding: 0;
+    }
+
     .invi {
       display:none;
+    }
+    .widget {
+      margin-bottom: 30px;
+    }
+    .widget.no-box {
+      margin-bottom: 9px;
+    }
+    .widget.subscribe p {
+      margin-bottom: 12px;
+    }
+    .widget-title {
+      margin-bottom: 10px;
     }
   }
 
