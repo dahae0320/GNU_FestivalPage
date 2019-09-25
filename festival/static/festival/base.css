@@ -60,8 +60,21 @@
 /*모바일 웹*/
 @media screen and (max-width: 768px) {
     .navbar .main_logo{
-        display:none;
+        display: inline;
     }
+    .navbar {
+        padding: 10px 0px 10px 15px;
+    }
+}
+
+/*iPhone 5*/
+@media screen and (max-width: 375px) {
+    .navbar a {
+        font-size: 15px;
+    }
+    .navbar {
+        padding:10px 0px 10px 15px;
+    } 
 }
 
 /*====================

@@ -93,7 +93,7 @@
         font-size: 6rem;
         letter-spacing: -6px;
     }
-    .navbar {
+    .navbar a:not(.main_logo){
         display: none;
     }
 }
