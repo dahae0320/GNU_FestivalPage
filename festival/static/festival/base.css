@@ -49,9 +49,12 @@
     margin-right: auto;
 }
 .navbar .home {
-    background: url(/static/festival/homepage.png);
-    width: 30px;
+    background: url(/static/festival/homepage_white.png);
+    width: 32px;
     height: 30px;
+}
+.navbar .home:active {
+    background: url(/static/festival/homepage.png);
 }
 .footer {
     flex-basis: 100%;
