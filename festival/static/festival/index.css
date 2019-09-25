@@ -1,11 +1,13 @@
-.backbox {
-    background: black ;
-    width: 100%;
-}
+@font-face { font-family: 'HSBombaram'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BRBA_B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRBA_B.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*main_image*/
 .main_image {
     width:100%;
     height: 100vh;
-    background: url(/static/festival/main2.jpg);
+    background: url(/static/festival/main3.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -16,20 +18,25 @@
     width: 100%;
 }
 .inner header {
-    font-size: 8rem;
+    font-size: 10rem;
     line-height: 1.1;
-    font-family: 'GyeonggiBatang', cursive;
+    font-family: 'Malssami815', cursive;
     margin-top: 1rem;
-    color: rgba(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
     text-transform: none;
     letter-spacing: -15px;
 }
-.box_image {
-    width:100%;
-    display:block;
-    z-index:3;
-    opacity: 0.7;
+.inner p {
+    font-size:20px;
+    margin:0px;
+    font-family: 'BRBA_B';
+}
+
+/*backbox*/
+.backbox {
+    background: black ;
+    width: 100%;
 }
 .festa {
     width:100%;
@@ -41,6 +48,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-family: 'HSBombaram';
 }
 .sing {
     width:100%;
@@ -52,6 +60,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-family: 'HSBombaram';
 }
 .foodtruck {
     width:100%;
@@ -63,20 +72,35 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-family: 'HSBombaram';
 }
 .click a{
     text-decoration: none;
-    font-size: 50px;
+    font-size: 60px;
     color:white;
 }
-.clikc a:active{
+.click a:active{
     background-color: white;
     color:black;
 }
+.footer {
+    display: none;
+}
 
+/*모바일 웹*/
 @media screen and (max-width: 768px) {
     .inner header {
-        font-size: 4rem;
+        font-size: 6rem;
         letter-spacing: -6px;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
+/*iPhone 5/SE */
+@media screen and (max-width:350px) {
+    .inner header {
+        font-size:85px;
     }
 }
