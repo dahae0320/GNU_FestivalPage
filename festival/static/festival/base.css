@@ -45,8 +45,13 @@
     border-radius:2px;
 }
 .navbar .main_logo {
-    font-size:23px;
+    font-size:20px;
     margin-right: auto;
+}
+.navbar .home {
+    background: url(/static/festival/homepage.png);
+    width: 30px;
+    height: 30px;
 }
 .footer {
     flex-basis: 100%;
