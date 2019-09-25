@@ -20,10 +20,10 @@
 </div>
 <!--축제 프로그램 사진별-->
 <div class="backbox">
-    <div class="click"><a href="#"><div class="festa">축제일정</div></a></div>
+    <div class="click"><a href="{% url 'scprogram'%}"><div class="festa">축제일정</div></a></div>
     
-    <div class="click"><a href="#"><div class="foodtruck">푸드트럭</div></a></div>
+    <div class="click"><a href="{% url 'foodtruck'%}"><div class="foodtruck">푸드트럭</div></a></div>
     
-    <div class="click"><a href="#"><div class="sing">라인업</div></a></div>
+    <div class="click"><a href="{% url 'singer'%}"><div class="sing">라인업</div></a></div>
 </div>
 {% endblock %}
