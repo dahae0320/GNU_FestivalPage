@@ -12,7 +12,7 @@
 <!--축제페이지 메인화면, 메인사진-->
 <div class="main_image">
     <div class="inner">
-        <header>~대동제~</header>
+        <header>대동제</header>
         <p class="univ">경상대학교 축제</p>
         <p class="date">10.16 ~ 10.18</p>
     </div>
@@ -65,15 +65,17 @@
                     }
                 }
                  
-                // 화면 이동 0.8초(800)
+                // 화면 이동 0.2초(200)
                 $("html,body").stop().animate({
                     scrollTop: moveTop + 'px'
                 }, {
-                    duration: 800, complete: function () {
+                    duration: 500, complete: function () {
                     }
                 });
             });
         });
     }
 </script>
+
+
 {% endblock %}
