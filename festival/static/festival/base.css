@@ -119,8 +119,8 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 /* Footer 4 */
 .footer- .logo {    display: inline-block;}
 
-/*==================== 
-	Widgets 
+/*====================
+	Widgets
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
@@ -135,11 +135,11 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 .widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
 .widget .badge{	float: right;	background: #7f7f7f;}
 
-.typo-light h1, 
-.typo-light h2, 
-.typo-light h3, 
-.typo-light h4, 
-.typo-light h5, 
+.typo-light h1,
+.typo-light h2,
+.typo-light h3,
+.typo-light h4,
+.typo-light h5,
 .typo-light h6,
 .typo-light p,
 .typo-light div,
@@ -167,6 +167,14 @@ transition: all 250ms ease-in-out 0s;
 
 .ininvi {
   display: none;
+}
+.ininvi h6 {
+	width:100%;
+	font-size: 14px;
+}
+.ininvi p {
+	width:100%;
+	font-size: 14px;
 }
 
 @media(max-width:500px) {
