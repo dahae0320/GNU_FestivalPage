@@ -66,7 +66,7 @@ header
 
 .foodtruck {
     flex-basis: 100%;
-    background-color: #DEDEDE;
+    background-color: #484847;
 }
 
 .truck {
@@ -106,8 +106,8 @@ header
 }
 
 .truck_top_left h1 {  
-    background-color: #D3D3D3;
-    color: #4C4C4C;
+    color: #ECECF1;  
+    background-color: #706F6F;
 }
 
 .truck_total {
@@ -119,7 +119,7 @@ header
     padding: 1em;
     padding-bottom: 0;
     border-radius: 0.5em;
-    background-color: #DEDEDE;
+    background-color: #4C4C4C;
 }
 
 .truck_top_left {
@@ -137,8 +137,8 @@ header
 .truck_top_image {
     width: 100%;
     height: 400px;
-    padding: 1em;
-    background-color: #D3D3D3;
+    padding: 1em; 
+    background-color: #706F6F;
     border-radius: 0 0.3em 0.3em 0.3em;
 }
 .truck_top_image > img {
@@ -164,8 +164,8 @@ header
     width: 100%;
     height: 400px;
     padding: 1em;
-    background-color: #D3D3D3;
-    color: #4C4C4C; 
+    color: #ECECF1;  
+    background-color: #706F6F;
     border-radius: 0 0.3em 0.3em 0.3em;
 }
 
@@ -190,7 +190,7 @@ header
 .truck_bottom_img > div > p {
     font-weight: bold;
     font-size: 1rem;
-    color: #4C4C4C;
+    color: #ECECF1;
 }
 
 
@@ -312,8 +312,8 @@ header
 }
 
 .truck_top_right_loc {
-    background-color: #D3D3D3;
-    color: #4C4C4C;  
+    color: #ECECF1;  
+    background-color: #706F6F; 
 }
 
 .truck_top_right_menu {
@@ -327,8 +327,8 @@ header
 #t2_r_2:checked ~ div #title_2,
 #t3_r_1:checked ~ div #title_1,
 #t3_r_2:checked ~ div #title_2{
-    background-color: #D3D3D3;
-    color: #4C4C4C; 
+    color: #ECECF1;  
+    background-color: #706F6F;
 }
 
 #t1_r_1:checked ~ div #title_2,
