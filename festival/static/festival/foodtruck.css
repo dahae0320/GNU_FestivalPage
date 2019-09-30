@@ -29,11 +29,11 @@ header
 *
 */
 .header_a {
-    display: block;
     flex-basis: 100%;
 }
 
 .ft_header {
+    flex-basis: 100%;
     height: 100vh;
     background: url(/static/ft_img.jpg);
     background-position: center;
