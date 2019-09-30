@@ -5,18 +5,43 @@
 <title>타이틀</title>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+<!---->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
 {% endblock %}
 
 
 {% block content %}
 <!--축제페이지 메인화면, 메인사진-->
-<div class="main_image">
-    <div class="inner">
-        <header>대동제</header>
-        <p class="univ">경상대학교 축제</p>
-        <p class="date">10.16 ~ 10.18</p>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!--메인 화면-->
+        <div class="swiper-slide"> 
+            <div class="main_image">
+                <div class="inner">
+                    <header>대동제</header>
+                    <p class="univ">경상대학교 축제</p>
+                    <p class="date">10.16 ~ 10.18</p>
+                </div>
+            </div>
+        </div>
+        <!--서브 화면-->
+        <div class="swiper-slide">
+            <div class="festa"><div class = "click"><a class="click" href="{% url 'scprogram'%}">축제일정</a></div></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="foodtruck"><div class = "click"><a class = "click" href="{% url 'foodtruck'%}">푸드트럭</a></div></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="sing"><div class = "click"><a class = "click" href="{% url 'singer'%}">라인업</a></div></div>
+        </div>   
     </div>
+    <!-- 페이징 -->
+    <div class="swiper-pagination"></div>
 </div>
+
 <!--축제 프로그램 사진별-->
 <!--<div class="backbox">
     <div class="click"><a href="{% url 'scprogram'%}"><div class="festa">축제일정</div></a></div>
@@ -25,13 +50,16 @@
     
     <div class="click"><a href="{% url 'singer'%}"><div class="sing">라인업</div></a></div>
 </div>-->
-<div class="festa"><div class = "click"><a class="click" href="{% url 'scprogram'%}">축제일정</a></div></div>
-<div class="foodtruck"><div class = "click"><a class = "click" href="{% url 'foodtruck'%}">푸드트럭</a></div></div>
-<div class="sing"><div class = "click"><a class = "click" href="{% url 'singer'%}">라인업</a></div></div>
+
+<!-- 네비게이션   -->
+   <!--    <div class="swiper-button-next"></div>다음 버튼 (오른쪽에 있는 버튼) -->
+   <!--<div class="swiper-button-prev"></div> 이전 버튼 -->
+
 {% endblock %}
 
 
 {% block script %}
+<!--
 <script type="text/javascript">
     window.onload = function () {
         var elm = ".festa, .sing, .foodtruck, .main_image";
@@ -75,6 +103,32 @@
             });
         });
     }
+-->
+
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: false,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+    
+
 </script>
 
 
