@@ -437,6 +437,19 @@ header
 }
 /*
 *
+터치 슬라이드
+*
+*/
+.swiper-container {
+    width:100%;
+    height: 100vh;
+}
+
+
+
+
+/*
+*
 미디어 쿼리
 *
 */
