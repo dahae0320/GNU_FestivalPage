@@ -16,7 +16,7 @@ label {
 }
 
 
-#i1, #i2, #i3 {
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13 {
     display: none;
 }
 
@@ -70,7 +70,7 @@ header
 
 .foodtruck {
     flex-basis: 100%;
-    background-color: #DEDEDE;
+    background-color: #484847;
 }
 
 .truck {
@@ -110,8 +110,8 @@ header
 }
 
 .truck_top_left h1 {  
-    background-color: #D3D3D3;
-    color: #4C4C4C;
+    color: #ECECF1;  
+    background-color: #706F6F;
 }
 
 .truck_total {
@@ -123,7 +123,6 @@ header
     padding: 1em;
     padding-bottom: 0;
     border-radius: 0.5em;
-    background-color: #DEDEDE;
 }
 
 .truck_top_left {
@@ -141,8 +140,8 @@ header
 .truck_top_image {
     width: 100%;
     height: 400px;
-    padding: 1em;
-    background-color: #D3D3D3;
+    padding: 1em; 
+    background-color: #706F6F;
     border-radius: 0 0.3em 0.3em 0.3em;
 }
 .truck_top_image > img {
@@ -168,8 +167,8 @@ header
     width: 100%;
     height: 400px;
     padding: 1em;
-    background-color: #D3D3D3;
-    color: #4C4C4C; 
+    color: #ECECF1;  
+    background-color: #706F6F;
     border-radius: 0 0.3em 0.3em 0.3em;
 }
 
@@ -194,7 +193,7 @@ header
 .truck_bottom_img > div > p {
     font-weight: bold;
     font-size: 1rem;
-    color: #4C4C4C;
+    color: #ECECF1;
 }
 
 
@@ -268,13 +267,33 @@ header
 
 #i1:checked ~ #truck_1,
 #i2:checked ~ #truck_2,
-#i3:checked ~ #truck_3{
+#i3:checked ~ #truck_3,
+#i4:checked ~ #truck_4,
+#i5:checked ~ #truck_5,
+#i6:checked ~ #truck_6,
+#i7:checked ~ #truck_7,
+#i8:checked ~ #truck_8,
+#i9:checked ~ #truck_9,
+#i10:checked ~ #truck_10,
+#i11:checked ~ #truck_11,
+#i12:checked ~ #truck_12,
+#i13:checked ~ #truck_13{
     z-index: 9; 
 }
 
 #i1:checked ~ div #dot1,
 #i2:checked ~ div #dot2,
-#i3:checked ~ div #dot3{
+#i3:checked ~ div #dot3,
+#i4:checked ~ div #dot4,
+#i5:checked ~ div #dot5,
+#i6:checked ~ div #dot6,
+#i7:checked ~ div #dot7,
+#i8:checked ~ div #dot8,
+#i9:checked ~ div #dot9,
+#i10:checked ~ div #dot10,
+#i11:checked ~ div #dot11,
+#i12:checked ~ div #dot12,
+#i13:checked ~ div #dot13{
     background: #fff;
 }
 
@@ -298,7 +317,19 @@ header
     z-index: 0;
 }
 
-#t1_r_1, #t1_r_2, #t2_r_1, #t2_r_2,#t3_r_1, #t3_r_2{
+#t1_r_1, #t1_r_2,
+#t2_r_1, #t2_r_2,
+#t3_r_1, #t3_r_2,
+#t4_r_1, #t4_r_2,
+#t5_r_1, #t5_r_2,
+#t6_r_1, #t6_r_2,
+#t7_r_1, #t7_r_2,
+#t8_r_1, #t8_r_2,
+#t9_r_1, #t9_r_2,
+#t10_r_1, #t10_r_2,
+#t11_r_1, #t11_r_2,
+#t12_r_1, #t12_r_2,
+#t13_r_1, #t13_r_2{
     display: none;
 }
 
@@ -307,7 +338,27 @@ header
 #t2_r_1:checked ~ div #t2_1,
 #t2_r_2:checked ~ div #t2_2,
 #t3_r_1:checked ~ div #t3_1,
-#t3_r_2:checked ~ div #t3_2{
+#t3_r_2:checked ~ div #t3_2,
+#t4_r_1:checked ~ div #t4_1,
+#t4_r_2:checked ~ div #t4_2,
+#t5_r_1:checked ~ div #t5_1,
+#t5_r_2:checked ~ div #t5_2,
+#t6_r_1:checked ~ div #t6_1,
+#t6_r_2:checked ~ div #t6_2,
+#t7_r_1:checked ~ div #t7_1,
+#t7_r_2:checked ~ div #t7_2,
+#t8_r_1:checked ~ div #t8_1,
+#t8_r_2:checked ~ div #t8_2,
+#t9_r_1:checked ~ div #t9_1,
+#t9_r_2:checked ~ div #t9_2,
+#t10_r_1:checked ~ div #t10_1,
+#t10_r_2:checked ~ div #t10_2,
+#t11_r_1:checked ~ div #t11_1,
+#t11_r_2:checked ~ div #t11_2,
+#t12_r_1:checked ~ div #t12_1,
+#t12_r_2:checked ~ div #t12_2,
+#t13_r_1:checked ~ div #t13_1,
+#t13_r_2:checked ~ div #t13_2{
     z-index: 9; 
 }
 
@@ -316,8 +367,8 @@ header
 }
 
 .truck_top_right_loc {
-    background-color: #D3D3D3;
-    color: #4C4C4C;  
+    color: #ECECF1;  
+    background-color: #706F6F; 
 }
 
 .truck_top_right_menu {
@@ -330,9 +381,29 @@ header
 #t2_r_1:checked ~ div #title_1,
 #t2_r_2:checked ~ div #title_2,
 #t3_r_1:checked ~ div #title_1,
-#t3_r_2:checked ~ div #title_2{
-    background-color: #D3D3D3;
-    color: #4C4C4C; 
+#t3_r_2:checked ~ div #title_2,
+#t4_r_1:checked ~ div #title_1,
+#t4_r_2:checked ~ div #title_2,
+#t5_r_1:checked ~ div #title_1,
+#t5_r_2:checked ~ div #title_2,
+#t6_r_1:checked ~ div #title_1,
+#t6_r_2:checked ~ div #title_2,
+#t7_r_1:checked ~ div #title_1,
+#t7_r_2:checked ~ div #title_2,
+#t8_r_1:checked ~ div #title_1,
+#t8_r_2:checked ~ div #title_2,
+#t9_r_1:checked ~ div #title_1,
+#t9_r_2:checked ~ div #title_2,
+#t10_r_1:checked ~ div #title_1,
+#t10_r_2:checked ~ div #title_2,
+#t11_r_1:checked ~ div #title_1,
+#t11_r_2:checked ~ div #title_2,
+#t12_r_1:checked ~ div #title_1,
+#t12_r_2:checked ~ div #title_2,
+#t13_r_1:checked ~ div #title_1,
+#t13_r_2:checked ~ div #title_2{
+    color: #ECECF1;  
+    background-color: #706F6F;
 }
 
 #t1_r_1:checked ~ div #title_2,
@@ -340,7 +411,27 @@ header
 #t2_r_1:checked ~ div #title_2,
 #t2_r_2:checked ~ div #title_1,
 #t3_r_1:checked ~ div #title_2,
-#t3_r_2:checked ~ div #title_1{  
+#t3_r_2:checked ~ div #title_1,
+#t4_r_1:checked ~ div #title_2,
+#t4_r_2:checked ~ div #title_1,
+#t5_r_1:checked ~ div #title_2,
+#t5_r_2:checked ~ div #title_1,
+#t6_r_1:checked ~ div #title_2,
+#t6_r_2:checked ~ div #title_1,
+#t7_r_1:checked ~ div #title_2,
+#t7_r_2:checked ~ div #title_1,
+#t8_r_1:checked ~ div #title_2,
+#t8_r_2:checked ~ div #title_1,
+#t9_r_1:checked ~ div #title_2,
+#t9_r_2:checked ~ div #title_1,
+#t10_r_1:checked ~ div #title_2,
+#t10_r_2:checked ~ div #title_1,
+#t11_r_1:checked ~ div #title_2,
+#t11_r_2:checked ~ div #title_1,
+#t12_r_1:checked ~ div #title_2,
+#t12_r_2:checked ~ div #title_1,
+#t13_r_1:checked ~ div #title_2,
+#t13_r_2:checked ~ div #title_1{  
     background-color: silver;
     color: #706F6F;
 }
