@@ -17,8 +17,8 @@
 <!--축제페이지 메인화면, 메인사진-->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-         <div class="swiper-slide"> 
-
+        <!--메인 화면-->
+        <div class="swiper-slide"> 
             <div class="main_image">
                 <div class="inner">
                     <header>대동제</header>
@@ -26,13 +26,21 @@
                     <p class="date">10.16 ~ 10.18</p>
                 </div>
             </div>
-
         </div>
-    <div class="swiper-slide"><div class="festa"><div class = "click"><a class="click" href="{% url 'scprogram'%}">축제일정</a></div></div></div>
-    <div class="swiper-slide"><div class="foodtruck"><div class = "click"><a class = "click" href="{% url 'foodtruck'%}">푸드트럭</a></div></div></div>
-    <div class="swiper-slide"><div class="sing"><div class = "click"><a class = "click" href="{% url 'singer'%}">라인업</a></div></div></div>   
+        <!--서브 화면-->
+        <div class="swiper-slide">
+            <div class="festa"><div class = "click"><a class="click" href="{% url 'scprogram'%}">축제일정</a></div></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="foodtruck"><div class = "click"><a class = "click" href="{% url 'foodtruck'%}">푸드트럭</a></div></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="sing"><div class = "click"><a class = "click" href="{% url 'singer'%}">라인업</a></div></div>
+        </div>   
+    </div>
+    <!-- 페이징 -->
+    <div class="swiper-pagination"></div>
 </div>
-
 
 <!--축제 프로그램 사진별-->
 <!--<div class="backbox">
@@ -43,19 +51,9 @@
     <div class="click"><a href="{% url 'singer'%}"><div class="sing">라인업</div></a></div>
 </div>-->
 
-<!--
-<div class="festa"><div class = "click"><a class="click" href="{% url 'scprogram'%}">축제일정</a></div></div>
-<div class="foodtruck"><div class = "click"><a class = "click" href="{% url 'foodtruck'%}">푸드트럭</a></div></div>
-<div class="sing"><div class = "click"><a class = "click" href="{% url 'singer'%}">라인업</a></div></div>
--->
-
 <!-- 네비게이션   -->
    <!--    <div class="swiper-button-next"></div>다음 버튼 (오른쪽에 있는 버튼) -->
    <!--<div class="swiper-button-prev"></div> 이전 버튼 -->
- 
-   <!-- 페이징 -->
-   <div class="swiper-pagination"></div>
-</div>
 
 {% endblock %}
 
@@ -111,7 +109,7 @@
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
-    loop: true,
+    loop: false,
 
     // If we need pagination
     pagination: {
