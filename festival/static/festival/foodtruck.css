@@ -263,6 +263,7 @@ header
     border-radius: 50%;
     display: inline-block;
     background: rgba(0,0,0,.6);
+    cursor: pointer;
 }
 
 #i1:checked ~ #truck_1,
