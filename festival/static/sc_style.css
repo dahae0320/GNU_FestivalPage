@@ -9,7 +9,7 @@
 }
 
 .navbar{
-    background-color: linear-gradient(rgba(0, 0, 0, 0.5), linear-gradient(rgba(0, 0, 0, 0.5)));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), linear-gradient(rgba(0, 0, 0, 0.5)));
 }
 
 #upperimg{
