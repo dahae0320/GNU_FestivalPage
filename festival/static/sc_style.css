@@ -18,14 +18,17 @@
     
 
     align-items: center;
-    text-align: center;
     justify-content: center;
+}
 
+#uppertitle{
     margin: auto;
     padding: auto;
     font-family: 'Malssami815';
     font-size: 60px;
     color: white;
+
+    text-align: center;
 
 }
 
