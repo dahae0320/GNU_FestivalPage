@@ -8,6 +8,10 @@
     background-color: rgb(44, 42, 42);
 }
 
+.navbar{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), linear-gradient(rgba(0, 0, 0, 0.1)));
+}
+
 #upperimg{
     max-width: 100%;
     height: 80vh;
@@ -18,14 +22,17 @@
     
 
     align-items: center;
-    text-align: center;
     justify-content: center;
+}
 
+#uppertitle{
     margin: auto;
     padding: auto;
     font-family: 'Malssami815';
     font-size: 60px;
     color: white;
+
+    text-align: center;
 
 }
 
@@ -226,7 +233,7 @@ td{
 
 .place{
     width: 50%;
-    color: rgb(214, 198, 198);
+    color: red;
 }
 
 .flex_container>table>thead{
