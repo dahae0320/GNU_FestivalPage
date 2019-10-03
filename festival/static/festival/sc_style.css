@@ -8,6 +8,10 @@
     background-color: rgb(44, 42, 42);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar{
     background: linear-gradient(rgba(150, 144, 144, 0.5), rgba(150, 144, 144, 0.5));
 }
