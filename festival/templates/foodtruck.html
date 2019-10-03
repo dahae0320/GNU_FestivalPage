@@ -16,19 +16,26 @@
 
 
         <!-- header -->
-        <div class="header_a swiper-slide">
+        <div class="header_a swiper-slide" id="header_a">
             <div class="ft_header">
                 <div class="ft_header_title">
                     <h1>Food Truck</h1>
                     <h3>경상대 축제 푸드트럭 메뉴 & 위치</h3>
                 </div>
+
+                <div class="ft_header_button_one">
+                    <a href="#foodtruck"><div class="b_r"><img src="{% static 'right_arrow.png' %}"></div></a>
+                </div>
             </div>
+
+            
+
         </div>
 
 
 
         <!-- 푸드트럭 정보 -->
-        <div class="foodtruck swiper-slide">
+        <div class="foodtruck swiper-slide" id="foodtruck">
             <input type="radio" name="images" id="i1" checked>
             <input type="radio" name="images" id="i2">
             <input type="radio" name="images" id="i3">
@@ -806,6 +813,11 @@
             </div>
 
 
+            <div class="ft_header_button_two">
+                <a href="#header_a"><div class="b_l"><img src="{% static 'left_arrow.png' %}"></div></a>
+            </div>
+
+
 
 
 
@@ -819,7 +831,7 @@
 
 {% block script %}
 <script>
-
+if (matchMedia("screen and (max-width: 1023px)").matches) {
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
         direction: 'vertical',
@@ -841,7 +853,7 @@
           el: '.swiper-scrollbar',
         },
       })
-        
+}
 </script>
 
 
