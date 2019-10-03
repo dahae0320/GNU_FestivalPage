@@ -499,13 +499,13 @@ header
 미디어 쿼리
 *
 */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .truck_top {
         margin-bottom: 70px;
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     .ft_header_button_one {
         display: none;
     }
