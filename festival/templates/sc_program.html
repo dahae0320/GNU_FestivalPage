@@ -9,10 +9,11 @@
 
 
     {% block content %}
-    <div id="superupper"></div>
     <div id="upperimg"><div id="uppertitle" style="width: 100%; opacity: 0.7;">축제일정</div></div>
 
+
     <div class="select_flex_container">
+        <div id="superupper"></div>
         <div class="select_flex_item"><a style ="color: white; text-decoration: none;" href="javascript:doDisplay()"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기▶</a></div>
         <div class="select_flex_item"><a style ="color: white; text-decoration: none;"href="javascript:doDisplay1()"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기▶</a></div>
     </div>
@@ -367,4 +368,4 @@
             </div>
             </div>
              
-        {% endblock %}       
+    {% endblock %}
