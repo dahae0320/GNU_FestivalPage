@@ -204,7 +204,6 @@ header
 */
 .foodtruck {
     position: relative;
-    padding-bottom: 100vh;
 }
 
 .bigprenxt {
@@ -256,11 +255,10 @@ header
 
 .dots{
     top: -5px;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 8px;
     margin: 0 4px;
     position: relative;
-    border-radius: 50%;
     display: inline-block;
     background: rgba(0,0,0,.6);
     cursor: pointer;
