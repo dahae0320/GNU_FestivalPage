@@ -37,7 +37,7 @@ body{overflow-y: hidden; overflow-x: hidden;}
     /* padding:10px 30px 10px 30px; */
     z-index:10001;
     top:45vh;
-    right: 10px;
+    right: 35px;
     /* margin-left:40%; */
 }
 
@@ -86,6 +86,7 @@ a:focus {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg);
     background-position: center;
     background-size: cover;
+    /* background-size:900px; */
     background-color:rgb(34, 0, 88);
 
     height:50vh;
@@ -257,14 +258,17 @@ footer{
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
 }
 
 .swiper-button-next {
-    width:30px;
-    height: 30px;
+    width:70px;
+    height: 60px;
     right: 10px;
     bottom: 10px;
     /* left: auto; */
-    background-color: blue;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('singer_화살표.png');
+    color: white;
     position: fixed;
 }
+
