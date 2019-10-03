@@ -236,7 +236,37 @@ td{
 }
 
 #sch1{
-    background-color: rgb(207, 92, 92);
+    background-color: rgb(221, 120, 120);
+    text-decoration: none;
+    color: white;
+}
+
+#sch2{
+    background-color: #ffbd82;
+    text-decoration: none;
+    color: white;
+}
+
+#sch3{
+    background-color: #ff9f99;
+    text-decoration: none;
+    color: white;
+}
+
+#sch4{
+    background-color: #93ba8a;
+    text-decoration: none;
+    color: white;
+}
+
+#sch5{
+    background-color: #abceff;
+    text-decoration: none;
+    color:white;
+}
+
+#sch6{
+    background-color: #bb84b6;
     text-decoration: none;
     color: white;
 }
