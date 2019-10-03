@@ -23,7 +23,8 @@
     font-size: 10rem;
     line-height: 1.1;
     font-family: 'MyLotteLight';
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: rgb(255, 255, 255);
     text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
     text-transform: none;
@@ -36,12 +37,7 @@
     color:rgb(179, 179, 179);
 }
 
-/*backbox*/
-/*.backbox {
-    background: black ;
-    width: 100%;
-}*/
-
+/*swiper*/
 .swiper-container {
     width:100%;
     height: 100vh;
@@ -97,6 +93,7 @@
     text-decoration: none;
     font-size: 60px;
     color:white;
+    padding: 100vh 100px;
 }
 .click a:active{
     /*background-color: white;*/
@@ -111,6 +108,9 @@
     .inner header {
         font-size: 6rem;
         letter-spacing: -6px;
+    }
+    .click a {
+        padding: 100vh 30px;
     }
 }
 
