@@ -513,6 +513,10 @@ header
     .ft_header_button_two {
         display: none;
     }
+
+    footer {
+        display: none;
+    }
 }
 
 
