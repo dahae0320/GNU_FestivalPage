@@ -527,7 +527,7 @@ header
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (min-height: 501px) {
     /* header */
     .ft_header_title > h1 {
         font-size: 3.5rem;
@@ -600,5 +600,28 @@ header
     
     .bigprenxt {
         width: 40px;
+    }
+}
+
+
+@media screen and (max-height: 500px) {
+    .truck_bottom_contents {
+        height: 150px;
+    }
+    
+    .folder_box {
+        padding-bottom : 150px;
+    }
+    
+    .truck_top_image {
+        height: 150px;
+    }
+
+    .truck_subtitle {
+        font-size: 2rem;
+    }
+
+    .truck_bottom_img > div > p {
+        font-size: 0.7rem;
     }
 }
