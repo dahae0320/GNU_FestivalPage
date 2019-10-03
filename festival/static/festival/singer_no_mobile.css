@@ -18,47 +18,42 @@ html{
     background-color: black;
 }
 
-body{overflow-y: hidden; overflow-x: hidden;}
-
 /* 
 
     nav
     
 */
 .nav-container{
-    /* width:100%; */
+    width:100%;
+    margin-top: 96vh;
     position:fixed;  
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
     display: flex; 
-    flex-direction:column; 
-    justify-content: space-between; 
+    flex-direction:row; 
+    justify-content: space-evenly; 
     flex-wrap: wrap;
-    /*현석*/
-    opacity: 1;
-    /* padding:10px 30px 10px 30px; */
-    z-index:10001;
-    top:45vh;
-    right: 35px;
-    /* margin-left:40%; */
+    align-items: flex-end;
 }
 
 /* nav button */
-/* .nav-btn{
+.nav-btn{
     color:white;
     text-decoration:none;
     font-size: 1.2em;
     font-family: 'NotoSerifKR', times ;
-} */
+}
 
 /* a href */
-/* a:hover { 
-    color: rgb(180, 180, 180); 
+a:hover { 
+    /* color: rgb(180, 180, 180);  */
     color:white;
     text-decoration: none; 
 }
 
 a:focus {
     text-decoration: none; 
-} */
+}
 
 /* 
 
@@ -82,11 +77,10 @@ a:focus {
     가수 메인사진
 */
 /* 10월 16일 */
-.main-1016{
+.flex-container>.main-1016{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg);
     background-position: center;
     background-size: cover;
-    /* background-size:900px; */
     background-color:rgb(34, 0, 88);
 
     height:50vh;
@@ -99,7 +93,7 @@ a:focus {
 }
 
 /* 10월 17일 */
-.main-1017{
+.flex-container>.main-1017{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_17_main.jpg);
     background-position: center;
     background-size: cover;
@@ -115,7 +109,7 @@ a:focus {
 }
 
 /* 10월 18일 */
-.main-1018{
+.flex-container>.main-1018{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_18_main.png);
     background-position: center;
     background-size: cover;
@@ -140,7 +134,7 @@ a:focus {
 /* 
     가수 프로필
 */
-.profile{
+.flex-container>.profile{
     height:50vh;
     width:100%;
     text-align: center;  
@@ -153,7 +147,7 @@ a:focus {
 }
 
 /* 프로필 3등분 박스  */
-.profile-box{
+.profile>.profile-box{
     height:90%;
     width:33.3%;
     max-width:600px;
@@ -173,21 +167,16 @@ a:focus {
     height:100%;
 }
 
-
-
 /*  
 
     웹에서 최적화 (width > 700px)
 
 */
 @media screen and (min-width: 700px) {
-
-    /* body{overflow-y: scroll; overflow-x: scroll;} */
-    
     /* nav */
-    /* .nav-container{
-        display: none;
-    } */
+    .nav-container{
+        margin-top:95vh;
+    }
 
     .nav-btn{
         font-size: 1.4em;
@@ -219,11 +208,6 @@ a:focus {
     }
 }
 
-
-footer{
-    display:none;
-}
-
 /*  
 
     작은 폰에서 최적화 (width < 375px)
@@ -234,41 +218,3 @@ footer{
         font-size:1.0rem;
     }
 }
-
-.swiper-container {
-    background-color: black;
-    width:100%;
-    height:100vh;
-    color:#fff;
-}
-.swiper-pagination-bullet {
-    width:10px;
-    height:10px;
-    border-color:rgba(255, 255, 255, 0.308);
-    border-style:solid;
-    border-width: 2px;
-    border-radius: 100%;
-    line-height: 20px;
-   font-size: 25px;
-   color:#fff;
-   opacity: 1;
-   margin:10px auto;
-   /* padding:10px auto; */
-}
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.603);
-    text-decoration: none;
-}
-
-.swiper-button-next {
-    width:70px;
-    height: 60px;
-    right: 10px;
-    bottom: 10px;
-    /* left: auto; */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('singer_화살표.png');
-    color: white;
-    position: fixed;
-}
-
