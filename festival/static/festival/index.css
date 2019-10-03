@@ -112,6 +112,9 @@
     .click a {
         padding: 100vh 30px;
     }
+    .swiper-button-next, .swiper-button-prev {
+        display:none;
+    }
 }
 
 /*iPhone 5/SE */
