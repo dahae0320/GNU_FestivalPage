@@ -68,15 +68,11 @@ html {
 }
 
 .menu_flex_container{
-    /*flex-direction: 가로정렬 / flex-wrap: 개행여부 설정 / justify-content: 가운데로정렬*/
-    /*align-items: 가운데를 중심으로 수직방향 정렬 / align-content: 어차피 margin을 줬기 때문에 가운데를 기준으로 따닥따닥 붙이는 것 선택*/
-    /**/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; 
-    /*align-content: center;*/
 
     width: 100%;
 
@@ -134,8 +130,6 @@ html {
 }
 
 
-/*한 개의 flex_container가 하나의 날짜라고 생각하자.(우선은)->가로 방향 정렬
-overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(수평, 수직 둘 다) 중심으로 정렬*/
 .flex_container{
     display: flex;
     flex-direction: row;
@@ -148,9 +142,6 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     padding-bottom: 13px;
     width: 100%;
     height: auto;
-
-    /*border-top: 7px solid white;
-    border-bottom: 7px solid white;*/
 }
 
 .flex_container>h2>#below_select{
@@ -227,7 +218,7 @@ td{
 
 .place{
     width: 50%;
-    color: rgb(214, 198, 198);
+    color: rgb(238, 252, 146);
 }
 
 .flex_container>table>thead{
