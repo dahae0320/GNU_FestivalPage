@@ -320,7 +320,7 @@ header
 
 .truck_bottom_contents {
     position: absolute;
-    z-index: -100;
+    z-index: -1;
 }
 
 .top_left {
