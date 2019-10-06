@@ -22,10 +22,6 @@
                     <h1>Food Truck</h1>
                     <h3>경상대 축제 푸드트럭 메뉴 & 위치</h3>
                 </div>
-
-                <div class="ft_header_button_one">
-                    <a href="#foodtruck"><div class="b_r"><img src="{% static 'right_arrow.png' %}"></div></a>
-                </div>
             </div>
 
             
@@ -813,10 +809,6 @@
             </div>
 
 
-            <div class="ft_header_button_two">
-                <a href="#header_a"><div class="b_l"><img src="{% static 'left_arrow.png' %}"></div></a>
-            </div>
-
 
 
 
@@ -831,11 +823,12 @@
 
 {% block script %}
 <script>
-if (matchMedia("screen and (max-width: 1024px)").matches) {
+
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
         direction: 'vertical',
         loop: false,
+        mousewheel: true,
     
         // If we need pagination
         pagination: {
@@ -853,55 +846,13 @@ if (matchMedia("screen and (max-width: 1024px)").matches) {
           el: '.swiper-scrollbar',
         },
       })
-}
+
+
+
+
+
 </script>
 
 
 
-<!--
-<script type="text/javascript">
-    window.onload = function () {
-        var elm = ".header_a,.foodtruck,#footer";
-        $(elm).each(function (index) {
-            // 개별적으로 Wheel 이벤트 적용
-            $(this).on("mousewheel DOMMouseScroll", function (e) {
-                e.preventDefault();
-                var delta = 0;
-                if (!event) event = window.event;
-                if (event.wheelDelta) {
-                    delta = event.wheelDelta / 120;
-                    if (window.opera) delta = -delta;
-                } 
-                else if (event.detail)
-                    delta = -event.detail / 3;
-                var moveTop = $(window).scrollTop();
-                var elmSelecter = $(elm).eq(index);
-                // 마우스휠을 위에서 아래로
-                if (delta < 0) {
-                    if ($(elmSelecter).next() != undefined) {
-                        try{
-                            moveTop = $(elmSelecter).next().offset().top;
-                        }catch(e){}
-                    }
-                // 마우스휠을 아래에서 위로
-                } else {
-                    if ($(elmSelecter).prev() != undefined) {
-                        try{
-                            moveTop = $(elmSelecter).prev().offset().top;
-                        }catch(e){}
-                    }
-                }
-                 
-                // 화면 이동 0.8초(800)
-                $("html,body").stop().animate({
-                    scrollTop: moveTop + 'px'
-                }, {
-                    duration: 50, complete: function () {
-                    }
-                });
-            });
-        });
-    }
-</script>
--->
 {% endblock %}
