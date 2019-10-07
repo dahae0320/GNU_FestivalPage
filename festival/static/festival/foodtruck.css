@@ -84,7 +84,6 @@ header
     height: 100%;
     margin-left: 3%;
     margin-right: 3%;
-    padding-top: 1em;
     position: absolute;
     z-index: -1;
     display: flex;
@@ -535,12 +534,21 @@ header
 }
 
 @media screen and (max-width: 420px) {
+    .truck_sub {
+        margin-bottom: 5%;
+    }
+
     .truck_top_image {
-        height: 200px;
+        height: 30vh;
+    }
+
+    .folder_box {
+        padding-bottom: 0;
+        height: 30vh;
     }
 
     .truck_bottom_contents {
-        height: 200px;
+        height: 30vh;
     }
 
     .truck_bottom_img {
@@ -561,6 +569,10 @@ header
     
     .bigprenxt {
         width: 40px;
+    }
+
+    .bignav {
+        bottom: 6%;
     }
 }
 
