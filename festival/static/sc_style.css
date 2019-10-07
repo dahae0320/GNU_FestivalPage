@@ -43,7 +43,6 @@
     flex-wrap: nowrap;
     
     width: 100%;
-
 }
 
 .select_flex_item{
@@ -86,7 +85,6 @@
     /*align-content: center;*/
 
     width: 100%;
-
 }
 
 .menu_flex_item{
@@ -155,7 +153,6 @@ overflow(넘으면 스크롤)는 우선 설정하지 않는다. / 가운데를(�
     padding-bottom: 13px;
     width: 100%;
     height: auto;
-
     /*border-top: 7px solid white;
     border-bottom: 7px solid white;*/
 }
