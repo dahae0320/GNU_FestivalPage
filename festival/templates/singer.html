@@ -40,7 +40,7 @@
                         Tempo
                     </div>
                     <div class="profile-box">
-                        <img src="{% static '10_16_profile.jpg' %}">
+                        <img src="{% static 'prepare1_singer.png' %}">
                     </div>
                     <div class="profile-box">
                         10/16 WED<br>
@@ -66,7 +66,7 @@
                         삐삐
                     </div>
                     <div class="profile-box">
-                        <img src="{% static '10_17_profile.jpg' %}">
+                        <img src="{% static 'prepare1_singer.png' %}">
                     </div>
                     <div class="profile-box">
                         10/17 THU<br>
@@ -91,7 +91,7 @@
                         짐살라빔
                     </div>
                     <div class="profile-box">
-                        <img src="{% static '10_18_profile.jpg' %}">
+                        <img src="{% static 'prepare1_singer.png' %}">
                     </div>
                     <div class="profile-box">
                         10/18 FRI<br>
@@ -120,10 +120,13 @@
     //     });
     // });
 
-    var menu = ['10/16', '10/17', '10/18']
     var mySwiper = new Swiper('.swiper-container',
         {
             direction: 'vertical', loop: true,
+            mousewheel:true,
+            spaceBetween:30,
+            slidesPerView:1,
+            
             pagination: { // 페이징 설정
                 el: '.nav-container',
                 clickable: true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
