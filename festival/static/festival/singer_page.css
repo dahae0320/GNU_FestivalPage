@@ -78,9 +78,9 @@ a:focus {
 */
 /* 10월 16일 */
 .flex-container>.main-1016{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_16_main.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     background-color:rgb(34, 0, 88);
 
     height:50vh;
@@ -94,9 +94,9 @@ a:focus {
 
 /* 10월 17일 */
 .flex-container>.main-1017{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_17_main.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     background-color:rgb(34, 0, 88);
 
     height:50vh;
@@ -110,9 +110,9 @@ a:focus {
 
 /* 10월 18일 */
 .flex-container>.main-1018{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/10_18_main.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     background-color:rgb(34, 0, 88);
     
     height:50vh;
