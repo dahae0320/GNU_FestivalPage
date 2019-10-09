@@ -24,8 +24,10 @@
 
     <div id="daypg">
         <div class="flex_container">
-            <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)👆</h2>
+            <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
         </div>
+
+        <h6>아이콘을 클릭하면👆 설명으로 이동</h6>
 
         <div class="menu_flex_container">
             <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
@@ -54,7 +56,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 부스 체험 후 스탬프 도장을 모아주세요! 3개의 스탬프를 다 모르면 푸짐한 경품들이 팡! 팡 터집니다!
+                                ♤ 부스 체험 후 스탬프 도장을 모아주세요! 4개의 스탬프를 다 모으면 푸짐한 경품들이 팡! 팡 터집니다!
                             </td>
                         </tr>
                     </tbody>
@@ -73,11 +75,11 @@
                     <tbody>
                         <tr>
                             <td class="time">10:00~17:00</td>
-                            <td class="place">중앙도서관 앞 부스</td>
+                            <td class="place">중앙도서관 뒷편</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭
+                                ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭 (소진 시 제공X)
                             </td>
                         </tr>
                     </tbody>
@@ -100,7 +102,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                ♤ 경상대학교 앱설치만 해주면, 이쁜 부채가 무료! 얼른와서 받아가세요~ (소진 시 제공 X)
+                                ♤ 하이유니브 앱 설치만 해주면, 이쁜 부채가 무료! 게다가 스탬프까지 ➰ 얼른와서 받아가세요~ (소진 시 제공X)
                             </td>
                         </tr>
                     </tbody>
@@ -254,11 +256,13 @@
             <h2><img id="below_select" src="{% static 'moon.png' %}"> 밤 프로그램(일별)</h2>
         </div>
 
+        <h6>표시된 셀을 클릭하면👆 설명으로 이동</h6>
+
         <div class="flex_container">
             <table>
                 <thead>
                     <tr>
-                        <th>시각</th>
+                        <th style="font-size: 'BMJUA'; font-style: bold; font-size: 18px;">START<br>TIME</th>
                         <th>10.16</th>
                         <th>10.17</th>
                         <th>10.18</th>
@@ -266,40 +270,40 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>18:00</td>
-                        <td id="sch1" rowspan="2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                        <td id="sch1" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                        <td id="sch1" rowspan="2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                    </tr>
-                    <tr>
-                        <td>19:00</td>
-                    </tr>
-                    <tr>
-                        <td>19:45</td>
-                        <td id="sch2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제</td>
-                        <td id="sch5" rowspan="4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-3">Mr.개척<br>(몸짱대회)<br>및 시상식</a></td>
-                    </tr>
-                    <tr>
-                        <td>20:00</td>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">18:00</td>
                         <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                        <td id="sch3" rowspan="4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">EDM<br>Party</td>
+                        <td id="sch1" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                        <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
                     </tr>
                     <tr>
-                        <td>20:10</td>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">19:00</td>
+                        <td id="sch2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제</td>
+                        <td id="sch5" rowspan="5" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-3">Mr.개척<br>(몸짱대회)<br>및 시상식</a></td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">19:45</td>
+                        <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">20:00</td>
                         <td id="sch2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제<br>결과발표</td>
+                        <td id="sch3" rowspan="2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">EDM<br>Party</td>
                     </tr>
                     <tr>
-                        <td>20:55</td>
-                        <td id="sch4" rowspan="2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-2">개회식👆</a></td>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">20:20</td>
+                        <td id="sch4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-2">개회식👆</a></td>
                     </tr>
                     <tr>
-                        <td>21:05</td>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:00</td>
+                        <td id="sch6" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수A</td>
+                        <td id="sch6" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수B</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:10</td>
                         <td id="sch4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">폐회식 및<br>불꽃놀이</td>
                     </tr>
                     <tr>
-                        <td>21:40</td>
-                        <td id="sch6" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수A</td>
-                        <td id="sch6" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수B</td>
+                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:20</td>
                         <td id="sch6" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수C</td>
                     </tr>
                 </tbody>
@@ -322,7 +326,7 @@
                         </tr>
                         <tr>
                             <td colspan="2" style="border-bottom: 3px solid rgb(78, 69, 69);">
-                                ♤ 기라성, 빛소리, 위드, LD50 참가
+                                ♤ 기라성, 빛소리, 위드, LD50
                             </td>
                         </tr>
                         <tr>
