@@ -83,13 +83,13 @@ a:focus {
 */
 /* 10월 16일 */
 .main-1016{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare_singer.png);
+    
     background-position: center;
     background-size: contain;
-    /* background-size:900px; */
-    background-color:rgb(34, 0, 88);
+    background-color:white;
     height:50vh;
     width:100%;
+    
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -98,11 +98,10 @@ a:focus {
 
 /* 10월 17일 */
 .main-1017{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare_singer.png);
+    
     background-position: center;
     background-size: contain;
-    background-color:rgb(34, 0, 88);
-
+    background-color:white;
     height:50vh;
     width:100%;
     
@@ -114,11 +113,10 @@ a:focus {
 
 /* 10월 18일 */
 .main-1018{
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare_singer.png);
+
     background-position: center;
     background-size: contain;
-    background-color:rgb(34, 0, 88);
-    
+    background-color:white;
     height:50vh;
     width:100%;
     
@@ -131,7 +129,7 @@ a:focus {
 /* 가수 이름 */
 .main-title{
     font-family: times, 'NotoSerifKR';
-    color: white;
+    color: black;
     font-size: 2em;   
 }
 
