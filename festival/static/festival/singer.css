@@ -85,7 +85,7 @@ a:focus {
 .main-1016{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    /*background-size: cover;*/
+    background-size: contain;
     /* background-size:900px; */
     background-color:rgb(34, 0, 88);
     height:50vh;
@@ -100,7 +100,7 @@ a:focus {
 .main-1017{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    /*background-size: cover;*/
+    background-size: contain;
     background-color:rgb(34, 0, 88);
 
     height:50vh;
@@ -116,7 +116,7 @@ a:focus {
 .main-1018{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/static/prepare.png);
     background-position: center;
-    /*background-size: cover;*/
+    background-size: contain;
     background-color:rgb(34, 0, 88);
     
     height:50vh;
