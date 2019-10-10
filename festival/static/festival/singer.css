@@ -130,7 +130,8 @@ a:focus {
 .main-title{
     font-family: times, 'NotoSerifKR';
     color: black;
-    font-size: 2em;   
+    font-size: 2em;
+    text-align: center;   
 }
 
 /* 

@@ -94,24 +94,18 @@
     text-decoration: none;
     font-size: 60px;
     color:white;
-    padding: 100vh 100px;
 }
 .click a:active{
     /*background-color: white;*/
     color:black;
 }
-.footer {
-    display: none;
-}
+
 
 /*모바일 웹*/
 @media screen and (max-width: 768px) {
     .inner header {
         font-size: 6rem;
         letter-spacing: -6px;
-    }
-    .click a {
-        padding: 100vh 30px;
     }
     .swiper-button-next, .swiper-button-prev {
         display:none;
