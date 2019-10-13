@@ -1,0 +1,120 @@
+@font-face { font-family: 'HSBombaram'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'MyLotteLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+/*main_image*/
+.main_image {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/static/festival/main2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.inner {
+    width: 100%;
+}
+.inner header {
+    font-size: 10rem;
+    line-height: 1.1;
+    font-family: 'S-CoreDream-8Heavy';
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
+    text-transform: none;
+    letter-spacing: -15px;
+}
+.inner p {
+    font-size:20px;
+    margin:0px;
+    font-family: 'GyeonggiBatang';
+    color:rgb(179, 179, 179);
+}
+
+/*swiper*/
+.swiper-container {
+    width:100%;
+    height: 100vh;
+}
+.swiper-slide {
+   text-align:center;
+   display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+   align-items:center; /* 위아래 기준 중앙정렬 */
+   justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide img {
+    width:100%;
+    height: 100vh;
+}
+
+.festa {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/static/festival/festa.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'HSBombaram';
+}
+.sing {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/static/festival/sing.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'HSBombaram';
+}
+.foodtruck {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/static/festival/foodtruck.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'HSBombaram';
+}
+.click a{
+    text-decoration: none;
+    font-size: 60px;
+    color:white;
+}
+.click a:active{
+    /*background-color: white;*/
+    color:black;
+}
+
+
+/*모바일 웹*/
+@media screen and (max-width: 768px) {
+    .inner header {
+        font-size: 6rem;
+        letter-spacing: -6px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display:none;
+    }
+}
+
+/*iPhone 5/SE */
+@media screen and (max-width:350px) {
+    .inner header {
+        font-size:85px;
+    }
+}

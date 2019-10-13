@@ -1,0 +1,271 @@
+/* 
+
+    모바일에 최적화된 코드입니다.
+    순서
+    nav / 본문(가수 메인사진 & 가수 프로필) / 웹에서 최적화 / 작은 폰에서 최적화
+
+*/
+
+/* font-family */
+@font-face { 
+    font-family: 'NotoSerifKR'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+html{
+    background-color: black;
+}
+
+body{overflow-y: hidden; overflow-x: hidden;}
+
+/* 
+
+    nav
+    
+*/
+.nav-container{
+    /* width:100%; */
+    position:fixed;  
+    display: flex; 
+    flex-direction:column; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    /*현석*/
+    opacity: 1;
+    /* padding:10px 30px 10px 30px; */
+    z-index:10001;
+    top:45vh;
+    right: 35px;
+    /* margin-left:40%; */
+}
+
+/* nav button */
+/* .nav-btn{
+    color:white;
+    text-decoration:none;
+    font-size: 1.2em;
+    font-family: 'NotoSerifKR', times ;
+} */
+
+/* a href */
+/* a:hover { 
+    color: rgb(180, 180, 180); 
+    color:white;
+    text-decoration: none; 
+}
+
+a:focus {
+    text-decoration: none; 
+} */
+
+/* 
+
+    본문
+
+*/
+.flex-container { 
+    display: flex; 
+    /* flex-direction: row | row-reverse | column | column-reverse */ 
+    flex-direction: column; 
+    /* justify-content: flex-start | center | flex-end | space-between | space-around | space-evenly */ 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+
+    width:100%;
+    background-color:black;
+}
+
+/* 
+    가수 메인사진
+*/
+/* 10월 16일 */
+.main-1016{
+    
+    background-position: center;
+    background-size: contain;
+    background-color:white;
+    height:50vh;
+    width:100%;
+    
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 10월 17일 */
+.main-1017{
+    
+    background-position: center;
+    background-size: contain;
+    background-color:white;
+    height:50vh;
+    width:100%;
+    
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 10월 18일 */
+.main-1018{
+
+    background-position: center;
+    background-size: contain;
+    background-color:white;
+    height:50vh;
+    width:100%;
+    
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 가수 이름 */
+.main-title{
+    font-family: times, 'NotoSerifKR';
+    color: black;
+    font-size: 2em;
+    text-align: center;   
+}
+
+/* 
+    가수 프로필
+*/
+.profile{
+    height:50vh;
+    width:100%;
+    text-align: center;  
+    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* 프로필 3등분 박스  */
+.profile-box{
+    height:90%;
+    width:33.3%;
+    max-width:600px;
+    overflow: hidden;
+
+    font-family: times, 'NotoSerifKR';
+    font-size:1.3rem;
+    color:white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 프로필 가운데 사진 */
+.profile-box>img{
+    height:100%;
+}
+
+
+
+/*  
+
+    웹에서 최적화 (width > 700px)
+
+*/
+@media screen and (min-width: 700px) {
+
+    /* body{overflow-y: scroll; overflow-x: scroll;} */
+    
+    /* nav */
+    /* .nav-container{
+        display: none;
+    } */
+
+    .nav-btn{
+        font-size: 1.4em;
+    }
+
+    /* 본문 : 가수 메인사진 */
+    .flex-container>.main-1016{
+        height: 100vh;
+    }
+
+    .flex-container>.main-1017{
+        height: 100vh;
+    }
+    .flex-container>.main-1018{
+        height: 100vh;
+    }
+
+    .main-title{
+        font-size:3em;
+    }
+
+    /* 본문 : 가수 프로필 */
+    .flex-container>.profile{
+        height: 100vh;
+    }
+   
+    .profile>.profile-box{
+        font-size:1.8em;
+    }
+}
+
+
+footer{
+    display:none;
+}
+
+/*  
+
+    작은 폰에서 최적화 (width < 375px)
+
+*/
+@media screen and (max-width: 375px) {
+    .profile>.profile-box{
+        font-size:1.0rem;
+    }
+}
+
+.swiper-container {
+    background-color: black;
+    width:100%;
+    height:100vh;
+    color:#fff;
+}
+.swiper-pagination-bullet {
+    width:10px;
+    height:10px;
+    border-color:rgba(255, 255, 255, 0.308);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 100%;
+    line-height: 20px;
+   font-size: 25px;
+   color:#fff;
+   opacity: 1;
+   margin:10px auto;
+   /* padding:10px auto; */
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+}
+
+.swiper-button-next {
+    width:70px;
+    height: 60px;
+    right: 10px;
+    bottom: 10px;
+    /* left: auto; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('singer_화살표.png');
+    color: white;
+    position: fixed;
+}
+

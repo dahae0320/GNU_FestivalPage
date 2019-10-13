@@ -1,0 +1,277 @@
+@font-face { font-family: 'HSBombaram'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'locus_sangsang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Malssami815'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Malssami815.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+*{
+    background-color: rgb(44, 42, 42);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: linear-gradient(rgba(150, 144, 144, 0.5), rgba(150, 144, 144, 0.5));
+}
+
+#upperimg{
+    width: 100%;
+    height: 80vh;
+    background: url(/static/photo-1472653431158-6364773b2a56.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Malssami815';
+    font-size: 60px;
+    color: white;
+
+}
+
+.select_flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    width: 100%;
+
+}
+
+.select_flex_item{
+    padding: 3vh;
+    text-align: center;
+    height: 20vh;
+
+    flex-grow: 1;
+
+    font-family: 'locus_sangsang';
+    font-size: 15px;
+
+    background-color: black;
+
+
+}
+
+
+.select_flex_item>a>#select{
+    width: 8vh;
+    height: 8vh;
+
+    background-color: black;
+
+}
+
+.menu_flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+
+    width: 100%;
+
+}
+
+.menu_flex_item{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    background: rgb(78, 69, 69);
+
+    flex-grow: 1;
+
+    font-family: 'locus_sangsang';
+    font-size: 25px;
+    font-style: bold; 
+}
+
+.menu_flex_item>.scroll>#stamp{
+    background-color: rgb(78, 69, 69);
+}
+
+.scroll{
+    color: white;
+}
+
+.forup{
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    vertical-align: middle;
+    
+    border-radius: 5px;
+    border: 5px black;
+
+    padding: 5px;
+
+    background-color: rgb(78, 69, 69);
+    
+    z-index: 10;
+}
+
+.forup>#arrow{
+    width: 40px;
+    height: 40px;
+
+    background-color: rgb(78, 69, 69);
+
+    
+}
+
+
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    height: auto;
+}
+
+.flex_container>h2>#below_select{
+    width: 35px;
+    height: 35px;
+}
+
+.flex_container>table>thead>tr>.pgname>#stamp{
+    background-color: white;
+}
+
+.pgname>#stamp{
+    width: 30px;
+    height: 30px;
+}
+
+.menu_flex_item>.scroll>#stamp{
+    width: 30px;
+    height: 30px;
+}
+
+.flex_container>h2{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-family: 'HSBombaram';
+    font-size: 4vh;
+}
+
+h6{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-family: 'locus_sangsang';
+    font-size: 2.5vh;
+}
+
+#daypg, #nightpg{
+    width:100%;
+    
+}
+table{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px 0;
+
+    background-color: white;
+    border: 5px solid rgb(78, 69, 69);
+    color: white;
+}
+
+.table_title{
+    font-family: 'HSBombaram';
+    font-size: 40px;
+    caption-side: top;
+    color: white;
+}
+
+th{
+    border-block-end: 5px solid rgb(78, 69, 69);
+    background-color: white;
+    color: black;
+    font-family: 'BMJUA';
+    font-style: bold;
+    font-size: 28px;
+
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+
+    font-family: 'locus_sangsang';
+    font-size: 18px;
+}
+
+.time{
+    width: 50%;
+    color: rgb(214, 198, 198);
+}
+
+.place{
+    width: 50%;
+    color: rgb(238, 252, 146);
+}
+
+.flex_container>table>thead{
+    text-decoration: bold;
+    background-color: darkmagenta;
+}
+
+#sch1{
+    background-color: rgb(221, 120, 120);
+    text-decoration: none;
+    color: white;
+}
+
+#sch2{
+    background-color: #ffbd82;
+    text-decoration: none;
+    color: white;
+}
+
+#sch3{
+    background-color: #ff9f99;
+    text-decoration: none;
+    color: white;
+}
+
+#sch4{
+    background-color: #93ba8a;
+    text-decoration: none;
+    color: white;
+}
+
+#sch5{
+    background-color: #abceff;
+    text-decoration: none;
+    color:white;
+}
+
+#sch6{
+    background-color: #bb84b6;
+    text-decoration: none;
+    color: white;
+}
+
+#sch7{
+    background-color: #d5d3bf;
+    text-decoration: none;
+    color: white;
+}
