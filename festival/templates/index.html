@@ -9,7 +9,11 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-
+<style>
+    footer{
+       display: none;
+    }
+ </style>
 {% endblock %}
 
 
@@ -64,25 +68,21 @@ var mySwiper = new Swiper ('.swiper-container', {
     mousewheel:true,
     spaceBetween:30,
     slidesPerView:1,
-
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable:true,
     },
-
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
   })
-
 </script>
 
 {% endblock %}

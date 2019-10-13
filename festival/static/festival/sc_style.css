@@ -169,8 +169,16 @@ html {
     color: white;
     font-family: 'HSBombaram';
     font-size: 4vh;
-
 }
+
+h6{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    font-family: 'locus_sangsang';
+    font-size: 2.5vh;
+}
+
 #daypg, #nightpg{
     width:100%;
     
@@ -258,6 +266,12 @@ td{
 
 #sch6{
     background-color: #bb84b6;
+    text-decoration: none;
+    color: white;
+}
+
+#sch7{
+    background-color: #d5d3bf;
     text-decoration: none;
     color: white;
 }
