@@ -287,8 +287,7 @@ header
 #i9:checked ~ #truck_9,
 #i10:checked ~ #truck_10,
 #i11:checked ~ #truck_11,
-#i12:checked ~ #truck_12,
-#i13:checked ~ #truck_13{
+#i12:checked ~ #truck_12{
     z-index: 9; 
 }
 
@@ -303,8 +302,7 @@ header
 #i9:checked ~ div #dot9,
 #i10:checked ~ div #dot10,
 #i11:checked ~ div #dot11,
-#i12:checked ~ div #dot12,
-#i13:checked ~ div #dot13{
+#i12:checked ~ div #dot12{
     background: #fff;
 }
 
@@ -320,12 +318,12 @@ header
 
 .truck_bottom_contents {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
 }
 
 .top_left {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
 }
 
 #t1_r_1, #t1_r_2,
@@ -339,8 +337,7 @@ header
 #t9_r_1, #t9_r_2,
 #t10_r_1, #t10_r_2,
 #t11_r_1, #t11_r_2,
-#t12_r_1, #t12_r_2,
-#t13_r_1, #t13_r_2{
+#t12_r_1, #t12_r_2{
     display: none;
 }
 
@@ -367,9 +364,7 @@ header
 #t11_r_1:checked ~ div #t11_1,
 #t11_r_2:checked ~ div #t11_2,
 #t12_r_1:checked ~ div #t12_1,
-#t12_r_2:checked ~ div #t12_2,
-#t13_r_1:checked ~ div #t13_1,
-#t13_r_2:checked ~ div #t13_2{
+#t12_r_2:checked ~ div #t12_2{
     z-index: 9; 
 }
 
@@ -410,9 +405,7 @@ header
 #t11_r_1:checked ~ div #title_1,
 #t11_r_2:checked ~ div #title_2,
 #t12_r_1:checked ~ div #title_1,
-#t12_r_2:checked ~ div #title_2,
-#t13_r_1:checked ~ div #title_1,
-#t13_r_2:checked ~ div #title_2{
+#t12_r_2:checked ~ div #title_2{
     color: #ECECF1;  
     background-color: #706F6F;
 }
@@ -440,9 +433,7 @@ header
 #t11_r_1:checked ~ div #title_2,
 #t11_r_2:checked ~ div #title_1,
 #t12_r_1:checked ~ div #title_2,
-#t12_r_2:checked ~ div #title_1,
-#t13_r_1:checked ~ div #title_2,
-#t13_r_2:checked ~ div #title_1{  
+#t12_r_2:checked ~ div #title_1{  
     background-color: silver;
     color: #706F6F;
 }
