@@ -1,397 +1,458 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 
-    {% block head %}
-    <script src="../static/festival/sc_edit.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'festival/sc_style.css' %}">
-    {% endblock %}
-
-
-
-    {% block content %}
-    <div id="upperimg"><div id="uppertitle" style="width: 100%; opacity: 0.7;">축제일정</div></div>
+{% block head %}
+<script src="../static/festival/sc_edit.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'festival/sc_style.css' %}">
+{% endblock %}
 
 
-    <div class="select_flex_container">
-        <div id="superupper"></div>
-        <div class="select_flex_item"><a style ="color: white; text-decoration: none;" href="javascript:doDisplay()"><img id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기👆</a></div>
-        <div class="select_flex_item"><a style ="color: white; text-decoration: none;"href="javascript:doDisplay1()"><img id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기👆</a></div>
-    </div>
 
-    <a href="#superupper"><div class="forup">
+{% block content %}
+<div id="upperimg">
+    <div id="uppertitle" style="width: 100%; opacity: 0.7;">축제일정</div>
+</div>
+
+
+<div class="select_flex_container">
+    <div id="superupper"></div>
+    <div class="select_flex_item"><a style="color: white; text-decoration: none;" href="javascript:doDisplay()"><img
+                id="select" src="{% static 'sunny.png' %}"><br>낮 프로그램<br>바로가기👆</a></div>
+    <div class="select_flex_item"><a style="color: white; text-decoration: none;" href="javascript:doDisplay1()"><img
+                id="select" src="{% static 'moon.png' %}"><br>밤 프로그램<br>바로가기👆</a></div>
+</div>
+
+<a href="#superupper">
+    <div class="forup">
         <img id="arrow" src="{% static 'arrow.png' %}">
-    </div></a>
+    </div>
+</a>
 
-    <div id="daypg">
-        <div class="flex_container">
-            <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
-        </div>
-
-        <h6>아이콘을 클릭하면👆 설명으로 이동</h6>
-
-        <div class="menu_flex_container">
-            <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp" src="{% static 'stamp.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target1" class="scroll"><img id="stamp" src="{% static 'idea.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target2" class="scroll"><img id="stamp" src="{% static 'fan.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target3" class="scroll"><img id="stamp" src="{% static 'running-man.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target4" class="scroll"><img id="stamp" src="{% static 'game-controller.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target5" class="scroll"><img id="stamp" src="{% static 'orange-juice.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target6" class="scroll"><img id="stamp" src="{% static 'flag.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target7" class="scroll"><img id="stamp" src="{% static 'medal.png' %}"></a></div>
-            <div class="menu_flex_item"><a href="#target8" class="scroll"><img id="stamp" src="{% static 'shopping-basket.png' %}"></a></div>
-        </div>
-        
-        <div id="target0">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'stamp.png' %}"> 스탬프 투어</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">10:00~17:00</td>
-                            <td class="place">중앙도서관 앞 부스</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 부스체험 후 스탬프를 모아주세요! 4개의 스탬프를 다 모으면 푸짐한 경품들이 팡팡 터집니다!<br>[16일은 13:00부터 진행]
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="target1">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'idea.png' %}"> 굿즈 배부</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">10:00~17:00</td>
-                            <td class="place">중앙도서관 뒷편</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭 (소진 시 제공X)
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="target2">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'fan.png' %}"> 하이유니브, 들어는 봤어?</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">10:00~17:00</td>
-                            <td class="place">중앙도서관 앞 부스</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 하이유니브 앱 설치만 해주면, 이쁜 부채가 무료! 게다가 스탬프까지 ➰ 얼른와서 받아가세요~ (소진 시 제공X)
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="target3">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'running-man.png' %}"> 방탈출</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">10:00 ~ 18:00</td>
-                            <td class="place">GNU컨벤션 1층</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 지금껏 그 누구도 겪어보지 못한 스릴만점 게임. 수상한 잡화점과 언니의 저주가 기다립니다💀
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="target4">
-                <div class="flex_container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'game-controller.png' %}"> 모두의 미니게임</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="time">10:00 ~ 17:00</td>
-                                <td class="place">중앙도서관 앞 부스</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    ♤ 추억이 방울방울 오락실게임기부터 경품 팡팡 명함뽑기까지! 한 번 시작하면 멈출 수 없는 미니게임 천국으로 오세요✨
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-        </div>
-
-        <div id="target5">
-                <div class="flex_container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'orange-juice.png' %}"> 드링크 파이트</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="time">11:00 ~ 14:00</td>
-                                <td class="place">중앙도서관 앞 부스</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    ♤ 쪼옵쪼옵~누가 제일 빠를까👀 음료수 빨리마시고 상품 받아가자! 내가 가좌동 1등 모기!! 모두를 이길 모기는 누구⁉️<br>[18일은 운영하지 않습니다.]
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-        </div>
-
-        <div id="target6">
-                <div class="flex_container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="pgname"><img id="stamp" src="{% static 'flag.png' %}"> 우당탕릴레이</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="time">12:00 ~ 18:00</td>
-                                <td class="place">중앙식당 앞 광장</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    ♤ 우당탕탕 버블슈트와 재미있는 랜덤게임으로 푸드트럭이용권까지 얻을 수 있는 기회! 놓치지 않을 거예요..🤩
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-        </div>
-
-        <div id="target7">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'medal.png' %}"> 출발 개척팀</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">11:00 ~ 17:00</td>
-                            <td class="place">야외공연장 뒤 남편주차장</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 어디서도 쉽게 볼 수 없는 익스트림 스포츠가 경상대에 상륙!🚀 빨리 달릴 수록 문상이💸 당신의 주머니에 있을것이니 한계에 도전해봐!<br>Just do it🤜
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div id="target8">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'shopping-basket.png' %}"> 플리마켓</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">11:00 ~ 17:00</td>
-                            <td class="place">중도앞 교양동 가는길</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 시간가는 줄 모르는 역대급 플리마켓 경상대에 입점! 구경할게 너무 많아서 24시간이 모자라~ 다 사버리니 내 통장이 텅장~💸
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-
+<div id="daypg">
+    <div class="flex_container">
+        <h2><img id="below_select" src="{% static 'sunny.png' %}"> 낮 프로그램(전일 공통)</h2>
     </div>
 
-    <div id="nightpg">
-        <div class="flex_container">
-            <h2><img id="below_select" src="{% static 'moon.png' %}"> 밤 프로그램(일별)</h2>
+    <h6>아이콘을 클릭하면👆 설명으로 이동</h6>
+
+    <div class="menu_flex_container">
+        <div class="menu_flex_item"><a href="#target0" class="scroll"><img id="stamp"
+                    src="{% static 'stamp.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target1" class="scroll"><img id="stamp" src="{% static 'idea.png' %}"></a>
         </div>
+        <div class="menu_flex_item"><a href="#target2" class="scroll"><img id="stamp" src="{% static 'fan.png' %}"></a>
+        </div>
+        <div class="menu_flex_item"><a href="#target3" class="scroll"><img id="stamp"
+                    src="{% static 'running-man.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target4" class="scroll"><img id="stamp"
+                    src="{% static 'game-controller.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target5" class="scroll"><img id="stamp"
+                    src="{% static 'orange-juice.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target6" class="scroll"><img id="stamp" src="{% static 'flag.png' %}"></a>
+        </div>
+        <div class="menu_flex_item"><a href="#target7" class="scroll"><img id="stamp"
+                    src="{% static 'medal.png' %}"></a></div>
+        <div class="menu_flex_item"><a href="#target8" class="scroll"><img id="stamp"
+                    src="{% static 'shopping-basket.png' %}"></a></div>
+    </div>
 
-        <h6>표시된 셀을 클릭하면👆 설명으로 이동</h6>
-
-        <div class="flex_container" style="padding-top: 0;">
+    <div id="target0">
+        <div class="flex_container">
             <table>
                 <thead>
                     <tr>
-                        <th style="font-size: 'BMJUA'; font-style: bold; font-size: 18px;">START<br>TIME</th>
-                        <th>10.16</th>
-                        <th>10.17</th>
-                        <th>10.18</th>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'stamp.png' %}"> 스탬프 투어</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">18:00</td>
-                        <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                        <td id="sch7" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X</td>
-                        <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
                     </tr>
                     <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">19:00</td>
-                        <td id="sch2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제</td>
-                        <td id="sch1" rowspan="4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                        <td id="sch5" rowspan="5" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-3">Mr.개척<br>(몸짱대회)<br>및 시상식</a></td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">19:45</td>
-                        <td id="sch1" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">20:00</td>
-                        <td id="sch2" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제<br>결과발표</td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">20:20</td>
-                        <td id="sch4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a style ="color: white; text-decoration: none;" href="#target-2">개회식👆</a></td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:00</td>
-                        <td id="sch6" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수A<br>/정리</td>
-                        <td id="sch6" rowspan="3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수B<br>/정리</td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:10</td>
-                        <td id="sch4" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">폐회식 및<br>불꽃놀이</td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">21:20</td>
-                        <td id="sch6" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수C</td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">22:10</td>
-                        <td id="sch7" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X</td>
-                        <td id="sch7" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X</td>
-                        <td id="sch3" style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">EDM<br>Party</td>
+                        <td colspan="2">
+                            ♤ 부스체험 후 스탬프를 모아주세요! 4개의 스탬프를 다 모으면 푸짐한 경품들이 팡팡 터집니다!<br>[16일은 13:00부터 진행]
+                        </td>
                     </tr>
                 </tbody>
             </table>
-
         </div>
+    </div>
 
-        <h6 style="color:rgb(238, 252, 146);">[장소 : 야외공연장]</h6>
-
-
-        <div id="target-1">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 동아리 공연</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="time">10월 16일</td>
-                            <td class="place">18:00~18:55<br>19:45~20:00</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="border-bottom: 3px solid rgb(78, 69, 69);">
-                                ♤ 기라성, 빛소리, 위드, LD50
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">10월 17일</td>
-                            <td class="place">18:00~19:50</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" style="border-bottom: 3px solid rgb(78, 69, 69);">
-                                ♤ 남가람, 래펄즈, 소리울림, 재비, 창업동아리, 토네이도, 햇귀
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="time">10월 18일</td>
-                            <td class="place">18:00~19:05</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                ♤ 바로크, 베이비스트링스, 소울, 외부대학 초청 동아리(올댄스)
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div id="target1">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'idea.png' %}"> 굿즈 배부</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 뒷편</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 대동제의 하이라이트! 야외공연장을 물들일 💡야광봉💡이 단돈 500원‼ 어머! 이건 사야해🤭 (소진 시 제공X)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
 
-        <div id="target-2">
-            <div class="flex_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" class="pgname"><img id="stamp" src="{% static 'trumpet.png' %}"> 개회식</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="place">20:20~20:28</td>
-                            <td>국민의례 및 묵념<br>내외빈 소개</td>
-                        </tr>
-                        <tr>
-                            <td class="place">20:28~20:31</td>
-                            <td>경상대 총장님 축사</td>
-                        </tr>
-                        <tr>
-                            <td class="place">20:33~20:43</td>
-                            <td>단과대학 학생회장단 소개</td>
-                        </tr>
-                        <tr>
-                            <td class="place">20:43~20:50</td>
-                            <td>총학생회 집행부 소개<br>및 개회선언</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div id="target2">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'fan.png' %}"> 하이유니브, 들어는 봤어?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10:00~17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 하이유니브 앱 설치만 해주면, 이쁜 부채가 무료! 게다가 스탬프까지 ➰ 얼른와서 받아가세요~ (소진 시 제공X)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    
+    </div>
+
+    <div id="target3">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'running-man.png' %}"> 방탈출</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10:00 ~ 18:00</td>
+                        <td class="place">GNU컨벤션 1층</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 지금껏 그 누구도 겪어보지 못한 스릴만점 게임. 수상한 잡화점과 언니의 저주가 기다립니다💀
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target4">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'game-controller.png' %}"> 모두의
+                            미니게임</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10:00 ~ 17:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 추억이 방울방울 오락실게임기부터 경품 팡팡 명함뽑기까지! 한 번 시작하면 멈출 수 없는 미니게임 천국으로 오세요✨
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target5">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'orange-juice.png' %}"> 드링크 파이트
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">11:00 ~ 14:00</td>
+                        <td class="place">중앙도서관 앞 부스</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 쪼옵쪼옵~누가 제일 빠를까👀 음료수 빨리마시고 상품 받아가자! 내가 가좌동 1등 모기!! 모두를 이길 모기는 누구⁉️<br>[18일은 운영하지 않습니다.]
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target6">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'flag.png' %}"> 우당탕릴레이</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">12:00 ~ 18:00</td>
+                        <td class="place">중앙식당 앞 광장</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 우당탕탕 버블슈트와 재미있는 랜덤게임으로 푸드트럭이용권까지 얻을 수 있는 기회! 놓치지 않을 거예요..🤩
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target7">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'medal.png' %}"> 출발 개척팀</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">11:00 ~ 17:00</td>
+                        <td class="place">야외공연장 뒤 남편주차장</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 어디서도 쉽게 볼 수 없는 익스트림 스포츠가 경상대에 상륙!🚀 빨리 달릴 수록 문상이💸 당신의 주머니에 있을것이니 한계에 도전해봐!<br>Just do
+                            it🤜
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target8">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'shopping-basket.png' %}"> 플리마켓
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">11:00 ~ 17:00</td>
+                        <td class="place">중도앞 교양동 가는길</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 시간가는 줄 모르는 역대급 플리마켓 경상대에 입점! 구경할게 너무 많아서 24시간이 모자라~ 다 사버리니 내 통장이 텅장~💸
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="nightpg">
+    <div class="flex_container">
+        <h2><img id="below_select" src="{% static 'moon.png' %}"> 밤 프로그램(일별)</h2>
+    </div>
+
+    <h6>표시된 셀을 클릭하면👆 설명으로 이동</h6>
+
+    <div class="flex_container" style="padding-top: 0;">
+        <table>
+            <thead>
+                <tr>
+                    <th style="font-size: 'BMJUA'; font-style: bold; font-size: 18px;">START<br>TIME</th>
+                    <th>10.16</th>
+                    <th>10.17</th>
+                    <th>10.18</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        18:00</td>
+                    <td id="sch1"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                    <td id="sch7"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X
+                    </td>
+                    <td id="sch1"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        19:00</td>
+                    <td id="sch2"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">개척가요제
+                    </td>
+                    <td id="sch1" rowspan="4"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                    <td id="sch5" rowspan="5"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-3">Mr.개척<br>(몸짱대회)<br>및 시상식</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        19:45</td>
+                    <td id="sch1"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-1">동아리공연👆</a></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        20:00</td>
+                    <td id="sch2"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">
+                        개척가요제<br>결과발표</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        20:20</td>
+                    <td id="sch4"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);"><a
+                            style="color: white; text-decoration: none;" href="#target-2">개회식👆</a></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        21:00</td>
+                    <td id="sch6" rowspan="3"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">
+                        초청가수A<br>/정리</td>
+                    <td id="sch6" rowspan="3"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">
+                        초청가수B<br>/정리</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        21:10</td>
+                    <td id="sch4"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">폐회식
+                        및<br>불꽃놀이</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        21:20</td>
+                    <td id="sch6"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">초청가수C
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: text-top; color: rgb(238, 252, 146); font-size: 16px; padding-top: 0;">
+                        22:10</td>
+                    <td id="sch7"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X
+                    </td>
+                    <td id="sch7"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">X
+                    </td>
+                    <td id="sch3"
+                        style="border-bottom: 1px solid rgb(78, 69, 69); border-right: 1px solid rgb(78, 69, 69);">
+                        EDM<br>Party</td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
-             
-    {% endblock %}
+
+    <h6 style="color:rgb(238, 252, 146);">[장소 : 야외공연장]</h6>
+
+
+    <div id="target-1">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'mic.png' %}"> 동아리 공연</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">10월 16일</td>
+                        <td class="place">18:00~18:55<br>19:45~20:00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-bottom: 3px solid rgb(78, 69, 69);">
+                            ♤ 기라성, 빛소리, 위드, LD50
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">10월 17일</td>
+                        <td class="place">18:00~19:50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border-bottom: 3px solid rgb(78, 69, 69);">
+                            ♤ 남가람, 래펄즈, 소리울림, 재비, 창업동아리, 토네이도, 햇귀
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">10월 18일</td>
+                        <td class="place">18:00~19:05</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            ♤ 바로크, 베이비스트링스, 소울, 외부대학 초청 동아리(올댄스)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="target-2">
+        <div class="flex_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="pgname"><img id="stamp" src="{% static 'trumpet.png' %}"> 개회식</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="place">20:20~20:28</td>
+                        <td>국민의례 및 묵념<br>내외빈 소개</td>
+                    </tr>
+                    <tr>
+                        <td class="place">20:28~20:31</td>
+                        <td>경상대 총장님 축사</td>
+                    </tr>
+                    <tr>
+                        <td class="place">20:33~20:43</td>
+                        <td>단과대학 학생회장단 소개</td>
+                    </tr>
+                    <tr>
+                        <td class="place">20:43~20:50</td>
+                        <td>총학생회 집행부 소개<br>및 개회선언</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block head %}
 <!-- foodtruck.css링크-->
 <link rel="stylesheet" type="text/css" href="{% static 'festival/foodtruck.css' %}">
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            
+
 
         </div>
 
@@ -47,13 +47,13 @@
             <input type="radio" name="images" id="i13">
 
 
-        <!-- 트럭1 -->
+            <!-- 트럭1 -->
             <div class="truck" id="truck_1">
                 <div class="truck_sub">
                     <div class="truck_total">
                         <div class="truck_top">
                             <input type="radio" name="folders" id="t1_r_1" checked>
-                            <input type="radio" name="folders" id="t1_r_2" >
+                            <input type="radio" name="folders" id="t1_r_2">
 
                             <div class="truck_top_left">
                                 <h1 class="truck_subtitle">토시킹</h1>
@@ -62,9 +62,13 @@
                                 </div>
                             </div>
                             <div class="truck_top_right">
-                                <label for="t1_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                                <label for="t1_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                                
+                                <label for="t1_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t1_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
                                 <div class="folder_box">
                                     <div class="truck_top_image top_left" id="t1_2" name="folders">
                                         <img src="{% static 'prepare.png' %}">
@@ -73,7 +77,7 @@
                                     <div class="truck_bottom_contents" id="t1_1" name="folders">
                                         <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
                                             <div class="tbi1">
-                                                <img src="{% static 'tk1_food1.jpg' %}" >
+                                                <img src="{% static 'tk1_food1.jpg' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>스테이크</p>
@@ -81,7 +85,7 @@
                                         </div>
                                         <div class="truck_bottom_img" style="display: none">
                                             <div class="tbi1">
-                                                <img src="{% static 'prepare.png' %}" >
+                                                <img src="{% static 'prepare.png' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>음식이름</p>
@@ -92,7 +96,7 @@
                             </div>
                         </div>
                         <div class="bigprenxt bigpre">
-                            <label for="i12" class="pre"></label>     
+                            <label for="i12" class="pre"></label>
                         </div>
                         <div class="bigprenxt bignxt">
                             <label for="i2" class="nxt"></label>
@@ -100,17 +104,17 @@
                     </div>
                 </div>
             </div>
-            
 
 
 
-        <!-- 트럭2 -->
+
+            <!-- 트럭2 -->
             <div class="truck" id="truck_2">
                 <div class="truck_sub">
                     <div class="truck_total">
                         <div class="truck_top">
                             <input type="radio" name="folders" id="t2_r_1" checked>
-                            <input type="radio" name="folders" id="t2_r_2" >
+                            <input type="radio" name="folders" id="t2_r_2">
 
                             <div class="truck_top_left">
                                 <h1 class="truck_subtitle">맥시</h1>
@@ -119,9 +123,13 @@
                                 </div>
                             </div>
                             <div class="truck_top_right">
-                                <label for="t2_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                                <label for="t2_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                                
+                                <label for="t2_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t2_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
                                 <div class="folder_box">
                                     <div class="truck_top_image top_left" id="t2_2" name="folders">
                                         <img src="{% static 'prepare.png' %}">
@@ -130,7 +138,7 @@
                                     <div class="truck_bottom_contents" id="t2_1" name="folders">
                                         <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
                                             <div class="tbi1">
-                                                <img src="{% static 'tk2_food1.jpg' %}" >
+                                                <img src="{% static 'tk2_food1.jpg' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>닭꼬치</p>
@@ -138,7 +146,7 @@
                                         </div>
                                         <div class="truck_bottom_img" style="display:none;">
                                             <div class="tbi1">
-                                                <img src="{% static 'prepare.png' %}" >
+                                                <img src="{% static 'prepare.png' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>음식이름</p>
@@ -149,7 +157,7 @@
                             </div>
                         </div>
                         <div class="bigprenxt bigpre">
-                            <label for="i1" class="pre"></label>     
+                            <label for="i1" class="pre"></label>
                         </div>
                         <div class="bigprenxt bignxt">
                             <label for="i3" class="nxt"></label>
@@ -162,7 +170,7 @@
 
 
 
-        <!-- 트럭3 -->
+            <!-- 트럭3 -->
             <div class="truck" id="truck_3">
                 <div class="truck_sub">
                     <div class="truck_total">
@@ -177,9 +185,13 @@
                                 </div>
                             </div>
                             <div class="truck_top_right">
-                                <label for="t3_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                                <label for="t3_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                                
+                                <label for="t3_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t3_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
                                 <div class="folder_box">
                                     <div class="truck_top_image top_left" id="t3_2" name="folders">
                                         <img src="{% static 'prepare.png' %}">
@@ -188,7 +200,7 @@
                                     <div class="truck_bottom_contents" id="t3_1" name="folders">
                                         <div class="truck_bottom_img">
                                             <div class="tbi1">
-                                                <img src="{% static 'tk3_food1.jpg' %}" >
+                                                <img src="{% static 'tk3_food1.jpg' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>타코야끼</p>
@@ -196,7 +208,7 @@
                                         </div>
                                         <div class="truck_bottom_img">
                                             <div class="tbi1">
-                                                <img src="{% static 'tk3_food2.jpg' %}" >
+                                                <img src="{% static 'tk3_food2.jpg' %}">
                                             </div>
                                             <div class="tbi2">
                                                 <p>소떡소떡</p>
@@ -207,7 +219,7 @@
                             </div>
                         </div>
                         <div class="bigprenxt bigpre">
-                            <label for="i2" class="pre"></label>     
+                            <label for="i2" class="pre"></label>
                         </div>
                         <div class="bigprenxt bignxt">
                             <label for="i4" class="nxt"></label>
@@ -217,550 +229,586 @@
             </div>
 
 
-        <!-- 트럭4 -->
-        <div class="truck" id="truck_4">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t4_r_1" checked>
-                        <input type="radio" name="folders" id="t4_r_2" >
+            <!-- 트럭4 -->
+            <div class="truck" id="truck_4">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t4_r_1" checked>
+                            <input type="radio" name="folders" id="t4_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">쿡앤그릴</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk4.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t4_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t4_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t4_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t4_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk4_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>깐풍새우</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display:none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>찹쌀탕수육</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">쿡앤그릴</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk4.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t4_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t4_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t4_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t4_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk4_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>깐풍새우</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display:none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>찹쌀탕수육</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i3" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i5" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i3" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i5" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
-        <!-- 트럭5 -->
-        <div class="truck" id="truck_5">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t5_r_1"checked>
-                        <input type="radio" name="folders" id="t5_r_2" >
+            <!-- 트럭5 -->
+            <div class="truck" id="truck_5">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t5_r_1" checked>
+                            <input type="radio" name="folders" id="t5_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">꼬야토야</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk5.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t5_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t5_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t5_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t5_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk5_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>분식</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display:none">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음식이름</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">꼬야토야</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk5.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t5_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t5_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t5_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t5_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk5_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>분식</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display:none">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음식이름</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i4" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i6" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i4" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i6" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
 
-        <!-- 트럭6 -->
-        <div class="truck" id="truck_6">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t6_r_1" checked>
-                        <input type="radio" name="folders" id="t6_r_2" >
+            <!-- 트럭6 -->
+            <div class="truck" id="truck_6">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t6_r_1" checked>
+                            <input type="radio" name="folders" id="t6_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">그남자</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk6.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t6_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t6_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t6_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t6_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk6_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>닭강정</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display:none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>닭똥집튀김</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">그남자</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk6.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t6_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t6_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t6_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t6_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk6_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>닭강정</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display:none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>닭똥집튀김</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i5" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i7" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i5" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i7" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <!-- 트럭7 -->
-        <div class="truck" id="truck_7">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t7_r_1" checked>
-                        <input type="radio" name="folders" id="t7_r_2">
+            <!-- 트럭7 -->
+            <div class="truck" id="truck_7">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t7_r_1" checked>
+                            <input type="radio" name="folders" id="t7_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">브로박스</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk7.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t7_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t7_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t7_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t7_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk7_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음료</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display:none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>칵테일</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">브로박스</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk7.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t7_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t7_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t7_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t7_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk7_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음료</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display:none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>칵테일</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i6" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i8" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i6" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i8" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
-        <!-- 트럭8 -->
-        <div class="truck" id="truck_8">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t8_r_1" checked>
-                        <input type="radio" name="folders" id="t8_r_2">
+            <!-- 트럭8 -->
+            <div class="truck" id="truck_8">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t8_r_1" checked>
+                            <input type="radio" name="folders" id="t8_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">로드밥</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk8.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t8_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t8_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t8_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t8_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk8_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>핫도그, 퀘사디아</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display:none">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음식이름</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">로드밥</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk8.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t8_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t8_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t8_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t8_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk8_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>핫도그, 퀘사디아</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display:none">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음식이름</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i7" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i9" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i7" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i9" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
 
-        <!-- 트럭9 -->
-        <div class="truck" id="truck_9">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t9_r_1"checked>
-                        <input type="radio" name="folders" id="t9_r_2" >
+            <!-- 트럭9 -->
+            <div class="truck" id="truck_9">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t9_r_1" checked>
+                            <input type="radio" name="folders" id="t9_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">핑카</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk9.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t9_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t9_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t9_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t9_1" name="folders">
-                                    <div class="truck_bottom_img">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk9_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>솜사탕</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk9_food2.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>소프트콘</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">핑카</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk9.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t9_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t9_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t9_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t9_1" name="folders">
+                                        <div class="truck_bottom_img">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk9_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>솜사탕</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk9_food2.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>소프트콘</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i8" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i10" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i8" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i10" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
-        <!-- 트럭10 -->
-        <div class="truck" id="truck_10">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t10_r_1"checked>
-                        <input type="radio" name="folders" id="t10_r_2" >
+            <!-- 트럭10 -->
+            <div class="truck" id="truck_10">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t10_r_1" checked>
+                            <input type="radio" name="folders" id="t10_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">더꿈</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk10.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t10_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t10_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t10_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t10_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk10_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>크레페</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display: none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음식이름</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">더꿈</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk10.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t10_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t10_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t10_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t10_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk10_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>크레페</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display: none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음식이름</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i9" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i11" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i9" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i11" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
-        <!-- 트럭11 -->
-        <div class="truck" id="truck_11">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t11_r_1" checked>
-                        <input type="radio" name="folders" id="t11_r_2">
+            <!-- 트럭11 -->
+            <div class="truck" id="truck_11">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t11_r_1" checked>
+                            <input type="radio" name="folders" id="t11_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">찹앤찹</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk11.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t11_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t11_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t11_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t11_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk11_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>소고기불초밥</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display: none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음식이름</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">찹앤찹</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk11.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t11_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t11_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t11_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t11_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk11_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>소고기불초밥</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display: none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음식이름</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i10" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i12" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i10" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i12" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
 
-        <!-- 트럭12 -->
-        <div class="truck" id="truck_12">
-            <div class="truck_sub">
-                <div class="truck_total">
-                    <div class="truck_top">
-                        <input type="radio" name="folders" id="t12_r_1"checked>
-                        <input type="radio" name="folders" id="t12_r_2">
+            <!-- 트럭12 -->
+            <div class="truck" id="truck_12">
+                <div class="truck_sub">
+                    <div class="truck_total">
+                        <div class="truck_top">
+                            <input type="radio" name="folders" id="t12_r_1" checked>
+                            <input type="radio" name="folders" id="t12_r_2">
 
-                        <div class="truck_top_left">
-                            <h1 class="truck_subtitle">닭에꼬치다</h1>
-                            <div class="truck_top_image">
-                                <img src="{% static 'tk12.jpg' %}">
-                            </div>
-                        </div>
-                        <div class="truck_top_right">
-                            <label for="t12_r_1"><h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1></label>
-                            <label for="t12_r_2"><h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1></label>
-                            
-                            <div class="folder_box">
-                                <div class="truck_top_image top_left" id="t12_2" name="folders">
-                                    <img src="{% static 'prepare.png' %}">
-                                </div>
-
-                                <div class="truck_bottom_contents" id="t12_1" name="folders">
-                                    <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'tk12_food1.jpg' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>소시지, 치즈볼, 너겟</p>
-                                        </div>
-                                    </div>
-                                    <div class="truck_bottom_img" style="display: none;">
-                                        <div class="tbi1">
-                                            <img src="{% static 'prepare.png' %}" >
-                                        </div>
-                                        <div class="tbi2">
-                                            <p>음식이름</p>
-                                        </div>
-                                    </div>
+                            <div class="truck_top_left">
+                                <h1 class="truck_subtitle">닭에꼬치다</h1>
+                                <div class="truck_top_image">
+                                    <img src="{% static 'tk12.jpg' %}">
                                 </div>
                             </div>
+                            <div class="truck_top_right">
+                                <label for="t12_r_1">
+                                    <h1 class="truck_subtitle truck_top_right_loc" id="title_1">메뉴</h1>
+                                </label>
+                                <label for="t12_r_2">
+                                    <h1 class="truck_subtitle truck_top_right_menu" id="title_2">위치</h1>
+                                </label>
+
+                                <div class="folder_box">
+                                    <div class="truck_top_image top_left" id="t12_2" name="folders">
+                                        <img src="{% static 'prepare.png' %}">
+                                    </div>
+
+                                    <div class="truck_bottom_contents" id="t12_1" name="folders">
+                                        <div class="truck_bottom_img" style="flex-basis:100%; padding-right:0;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'tk12_food1.jpg' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>소시지, 치즈볼, 너겟</p>
+                                            </div>
+                                        </div>
+                                        <div class="truck_bottom_img" style="display: none;">
+                                            <div class="tbi1">
+                                                <img src="{% static 'prepare.png' %}">
+                                            </div>
+                                            <div class="tbi2">
+                                                <p>음식이름</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bigprenxt bigpre">
-                        <label for="i11" class="pre"></label>     
-                    </div>
-                    <div class="bigprenxt bignxt">
-                        <label for="i1" class="nxt"></label>
+                        <div class="bigprenxt bigpre">
+                            <label for="i11" class="pre"></label>
+                        </div>
+                        <div class="bigprenxt bignxt">
+                            <label for="i1" class="nxt"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
 
 
-        <!-- 트럭13 -->
-        
-
-
-        <!-- z-index0부분 -->
-        <div class="ft_basic"></div>
+            <!-- 트럭13 -->
 
 
 
+            <!-- z-index0부분 -->
+            <div class="ft_basic"></div>
 
 
 
 
 
-        <!-- dot 부분 -->
+
+
+
+            <!-- dot 부분 -->
             <div class="bignav">
                 <div class="nav">
-                        <label for="i1" class="dots" id="dot1" for="i1"></label>
-                        <label for="i2" class="dots" id="dot2" for="i2"></label>
-                        <label for="i3" class="dots" id="dot3" for="i3"></label>
-                        <label for="i4" class="dots" id="dot4" for="i4"></label>
-                        <label for="i5" class="dots" id="dot5" for="i5"></label>
-                        <label for="i6" class="dots" id="dot6" for="i6"></label>
-                        <label for="i7" class="dots" id="dot7" for="i7"></label>
-                        <label for="i8" class="dots" id="dot8" for="i8"></label>
-                        <label for="i9" class="dots" id="dot9" for="i9"></label>
-                        <label for="i10" class="dots" id="dot10" for="i10"></label>
-                        <label for="i11" class="dots" id="dot11" for="i11"></label>
-                        <label for="i12" class="dots" id="dot12" for="i12"></label>
+                    <label for="i1" class="dots" id="dot1" for="i1"></label>
+                    <label for="i2" class="dots" id="dot2" for="i2"></label>
+                    <label for="i3" class="dots" id="dot3" for="i3"></label>
+                    <label for="i4" class="dots" id="dot4" for="i4"></label>
+                    <label for="i5" class="dots" id="dot5" for="i5"></label>
+                    <label for="i6" class="dots" id="dot6" for="i6"></label>
+                    <label for="i7" class="dots" id="dot7" for="i7"></label>
+                    <label for="i8" class="dots" id="dot8" for="i8"></label>
+                    <label for="i9" class="dots" id="dot9" for="i9"></label>
+                    <label for="i10" class="dots" id="dot10" for="i10"></label>
+                    <label for="i11" class="dots" id="dot11" for="i11"></label>
+                    <label for="i12" class="dots" id="dot12" for="i12"></label>
                 </div>
             </div>
 
@@ -779,28 +827,28 @@
 
 {% block script %}
 <script>
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'vertical',
         loop: false,
         mousewheel: true,
-    
+
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+            el: '.swiper-pagination',
         },
-    
+
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-    
+
         // And if we need scrollbar
         scrollbar: {
-          el: '.swiper-scrollbar',
+            el: '.swiper-scrollbar',
         },
-      })
+    })
 </script>
 
 
