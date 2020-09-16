@@ -35,7 +35,6 @@ pipenv==2018.11.26
 psycopg2==2.8.5
 pycodestyle==2.6.0
 pylint==2.3.1
-pypiwin32==223
 python-dateutil==2.8.0
 python-dotenv==0.13.0
 pytz==2020.1
